@@ -3,20 +3,28 @@
 <html lang="zh-Hant">
 <head>
 
-<!-- ====== L1~L8 完整防護（silent-blank · v3.1-l8-decoder-inject-fix） ====== -->
-<meta name="wy-full-protection" content="v3.1-l8-decoder-inject-fix">
+<!-- ====== L1~L8 完整防護（silent-blank · v4-secure-by-default） ====== -->
+<meta name="wy-full-protection" content="v4-secure-by-default">
 <meta name="robots" content="noindex,nofollow,noai,noimageai,noarchive,nosnippet">
 <meta name="googlebot" content="noindex,nofollow,noai,noimageai">
 <meta name="bingbot" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 
 <style id="wy-preguard">
-html.wy-preguard{background:#ffffff!important;}
-html.wy-preguard body,html.wy-preguard body *{visibility:hidden!important;background:#ffffff!important;}
+/* secure-by-default：整頁預設隱形＋純白底，唯一揭幕方式是 JS 在
+   origin + liveness 全部過關後主動加上 .wy-revealed 類別。
+   即使 JS 完全沒跑、瀏覽器 save-as 改壞 script、檔案被搬到別處——
+   只要這段 CSS 還在，畫面就是純白。 */
+html{visibility:hidden!important;background:#ffffff!important;}
+html body,html body *{visibility:hidden!important;background:#ffffff!important;}
+html.wy-revealed{visibility:visible!important;background:var(--bg,#f7f3ec)!important;}
+html.wy-revealed body{visibility:visible!important;background:var(--bg,#f7f3ec)!important;}
+html.wy-revealed body *{visibility:visible!important;background:initial;}
+/* 列印：不論 revealed 與否，全部回到隱形＋純白；iframe 整顆 display:none 排除 */
 @media print{
-  /* outer：整顆 iframe element 用 display:none 移出列印流程（visibility:hidden 不足以擋 iframe 內部文檔） */
   html,body{background:#ffffff!important;}
-  body,body *{display:none!important;visibility:hidden!important;}
+  html,body,body *{display:none!important;visibility:hidden!important;}
+  html.wy-revealed,html.wy-revealed body,html.wy-revealed body *{visibility:hidden!important;display:none!important;}
   iframe,iframe.ch-frame{display:none!important;visibility:hidden!important;}
   html::before,body::before,html::after,body::after{content:none!important;display:none!important;}
   @page{margin:0;size:auto;}
@@ -25,8 +33,7 @@ html.wy-preguard body,html.wy-preguard body *{visibility:hidden!important;backgr
 
 <script id="wy-guard">
 (function(){
-  try{document.documentElement.classList.add('wy-preguard');}catch(e){}
-
+  // secure-by-default：什麼都不做整頁就是隱形 — JS 只負責「成功才揭幕」
   var ALLOWED_HOST = "weiwen0925.github.io";
   var ALLOWED_PATH = "/dazhidulun-15/";
   var KEY = "wY-l15-2026";
@@ -35,15 +42,40 @@ html.wy-preguard body,html.wy-preguard body *{visibility:hidden!important;backgr
   window.__wyReady = new Promise(function(res){_resolve = res;});
   window.__wyKey = KEY;
 
+  // _silent · 強化版：除了不解碼，還持續清空 body 內任何後出現的內容
   function _silent(){
-    // 不解碼、不顯示 — preguard 維持
+    function wipe(){
+      try{
+        if(document.body){
+          // 清掉所有 data-* 加密屬性，避免有第三方 script 解碼
+          document.querySelectorAll('iframe.ch-frame').forEach(function(f){
+            try{f.removeAttribute('data-c');f.srcdoc='';f.remove();}catch(e){}
+          });
+          document.querySelectorAll('[data-wytext]').forEach(function(el){
+            try{el.removeAttribute('data-wytext');el.textContent='';}catch(e){}
+          });
+          // 整顆 body 清空（preguard CSS 已經視覺鎖住，這是雙保險）
+          try{document.body.innerHTML = '';}catch(e){}
+        }
+      }catch(e){}
+    }
+    wipe();
+    if(document.readyState === 'loading'){
+      document.addEventListener('DOMContentLoaded', wipe);
+    }
+    // MutationObserver：監視 body 後續任何插入，立即抹掉
     try{
-      document.querySelectorAll('iframe.ch-frame').forEach(function(f){
-        try{f.removeAttribute('data-c');f.srcdoc='';}catch(e){}
-      });
-      document.querySelectorAll('[data-wytext]').forEach(function(el){
-        try{el.removeAttribute('data-wytext');}catch(e){}
-      });
+      function startObs(){
+        if(document.body){
+          try{
+            var obs = new MutationObserver(function(){wipe();});
+            obs.observe(document.body, {childList:true, subtree:true, characterData:true});
+          }catch(e){}
+        } else {
+          setTimeout(startObs, 10);
+        }
+      }
+      startObs();
     }catch(e){}
   }
 
@@ -110,9 +142,8 @@ html.wy-preguard body,html.wy-preguard body *{visibility:hidden!important;backgr
   _liveness().then(function(ok){
     if(!ok){ _silent(); return; }
     window.__wyOriginOK = true;
-    try{document.documentElement.classList.remove('wy-preguard');}catch(e){}
-    var pg = document.getElementById('wy-preguard');
-    if(pg && pg.parentNode) pg.parentNode.removeChild(pg);
+    // 揭幕：加 wy-revealed，CSS 才會把整頁從 visibility:hidden 解開
+    try{document.documentElement.classList.add('wy-revealed');}catch(e){}
     _resolve(true);
   });
 
@@ -152,14 +183,15 @@ html.wy-preguard body,html.wy-preguard body *{visibility:hidden!important;backgr
         return false;
       }
     }, true);
+    // 列印一觸發就把 wy-revealed 拿掉（CSS @media print 還有第二道保險）
     window.addEventListener('beforeprint', function(){
-      try{document.documentElement.classList.add('wy-preguard');}catch(e){}
+      try{document.documentElement.classList.remove('wy-revealed');}catch(e){}
       _wipeIframes();
     });
     window.addEventListener('afterprint', function(){
       _restoreIframes();
       if(window.__wyOriginOK){
-        try{document.documentElement.classList.remove('wy-preguard');}catch(e){}
+        try{document.documentElement.classList.add('wy-revealed');}catch(e){}
       }
     });
     if(typeof window.matchMedia === 'function'){
@@ -167,12 +199,12 @@ html.wy-preguard body,html.wy-preguard body *{visibility:hidden!important;backgr
       if(mq && mq.addEventListener){
         mq.addEventListener('change', function(ev){
           if(ev.matches){
-            try{document.documentElement.classList.add('wy-preguard');}catch(e){}
+            try{document.documentElement.classList.remove('wy-revealed');}catch(e){}
             _wipeIframes();
           }else{
             _restoreIframes();
             if(window.__wyOriginOK){
-              try{document.documentElement.classList.remove('wy-preguard');}catch(e){}
+              try{document.documentElement.classList.add('wy-revealed');}catch(e){}
             }
           }
         });
