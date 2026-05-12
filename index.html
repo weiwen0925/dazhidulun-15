@@ -3,29 +3,24 @@
 <html lang="zh-Hant">
 <head>
 
-<!-- ====== L1~L8 完整防護（silent-blank · v4-secure-by-default） ====== -->
-<meta name="wy-full-protection" content="v4-secure-by-default">
+<!-- ====== L1~L8 完整防護（silent-blank · v4.1-secure-by-default-clean） ====== -->
+<meta name="wy-full-protection" content="v4.1-secure-by-default-clean">
 <meta name="robots" content="noindex,nofollow,noai,noimageai,noarchive,nosnippet">
 <meta name="googlebot" content="noindex,nofollow,noai,noimageai">
 <meta name="bingbot" content="noindex,nofollow">
 <meta name="referrer" content="no-referrer">
 
 <style id="wy-preguard">
-/* secure-by-default：整頁預設隱形＋純白底，唯一揭幕方式是 JS 在
-   origin + liveness 全部過關後主動加上 .wy-revealed 類別。
-   即使 JS 完全沒跑、瀏覽器 save-as 改壞 script、檔案被搬到別處——
-   只要這段 CSS 還在，畫面就是純白。 */
-html{visibility:hidden!important;background:#ffffff!important;}
-html body,html body *{visibility:hidden!important;background:#ffffff!important;}
-html.wy-revealed{visibility:visible!important;background:var(--bg,#f7f3ec)!important;}
-html.wy-revealed body{visibility:visible!important;background:var(--bg,#f7f3ec)!important;}
-html.wy-revealed body *{visibility:visible!important;background:initial;}
-/* 列印：不論 revealed 與否，全部回到隱形＋純白；iframe 整顆 display:none 排除 */
+/* secure-by-default · v4.1：只動 html 與 body 兩個元素，不碰 descendant
+   背景 / 樣式。preguard 期間整顆 body 用 display:none，連 layout 都不算；
+   揭幕後規則自然失效，所有 master CSS 的 hero / 卡片 / iframe 樣式完整恢復。 */
+html:not(.wy-revealed){background:#ffffff!important;}
+html:not(.wy-revealed) body{display:none!important;}
+/* 列印：不論 revealed 與否一律隱形；iframe 整顆 display:none 排除 */
 @media print{
   html,body{background:#ffffff!important;}
-  html,body,body *{display:none!important;visibility:hidden!important;}
-  html.wy-revealed,html.wy-revealed body,html.wy-revealed body *{visibility:hidden!important;display:none!important;}
-  iframe,iframe.ch-frame{display:none!important;visibility:hidden!important;}
+  body{display:none!important;}
+  iframe,iframe.ch-frame{display:none!important;}
   html::before,body::before,html::after,body::after{content:none!important;display:none!important;}
   @page{margin:0;size:auto;}
 }
