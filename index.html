@@ -1254,5 +1254,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C15P12:END-->
+<!--WY-C15P13:BEGIN-->
+<style id="wy-c15p13-css">
+.c15p13-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c15p13-fabbox.show{display:block;}
+.c15p13-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c15p13-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c15p13-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c15p13-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c15p13-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c15p13-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c15p13-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c15p13-modal.open{display:flex;}
+.c15p13-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c15p13-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c15p13-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c15p13-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c15p13-close:hover{background:#e3d5b8;}
+.c15p13-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c15p13-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c15p13-tbl th,.c15p13-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c15p13-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c15p13-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c15p13-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c15p13-tbl b{color:#8b2500;}
+.c15p13-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c15p13-note b{color:#8b2500;}
+@media(max-width:900px){.c15p13-fabbox{right:14px;}.c15p13-tbl{font-size:11.5px;}.c15p13-card{padding:26px 14px 16px;}}
+</style>
+<div class="c15p13-fabbox" id="c15p13Box"><button class="c15p13-btn" id="c15p13Btn" type="button" aria-label="開啟全景總表"><span class="c15p13-ic">▦</span><span class="c15p13-ls"><span class="c15p13-l1">本品 · 般若遇羼提</span><span class="c15p13-l2">問題在心不在空 · 空亦復空</span></span></button></div><div class="c15p13-modal" id="c15p13Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c15p13-card"><button class="c15p13-close" id="c15p13Close" type="button" aria-label="關閉">×</button><h3>卷十五·第十三品 般若遇羼提 · 全景總表</h3><p class="sub">卷十五・第十三品｜法忍三重基底・常空豈非惡邪・問題在心不在空・三種行清淨・空亦復空</p><table class="c15p13-tbl"><caption>一、法忍的三重基底（禪定/智慧/實相契合·本品主骨架）</caption><thead><tr><th>基底</th><th>內容</th></tr></thead><tbody><tr><td>禪定力</td><td>「禪定力故，心柔軟清淨，聞諸法實相，應心與會，信著深入，無疑無悔」——疑悔是欲界繫法、麁惡故不入柔軟心中（未修禪定的心麁硬，聞實相只在表層反彈）</td></tr><tr><td>智慧力</td><td>「於一切諸法中種種觀，無有一法可得者；是法能忍能受，不疑不悔」</td></tr><tr><td>實相契合·破無明毒</td><td>凡夫以無明毒作轉相（非常作常/苦作樂/無我有我/空謂有實）；得聖實智慧破無明毒、知諸法實相，棄捨不著</td></tr></tbody></table><table class="c15p13-tbl"><caption>二、常空豈非惡邪·問題在心不在空（外道詰問）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>外道詰問</td><td>「若從本已來常空，今世亦空，是為惡邪，云何言法忍？」——若一切常空豈非斷滅見/虛無主義（否定因果）？初學般若者確實滑入「反正什麼都空，何必修行守戒慈悲」</td></tr><tr><td>問題不在空而在心</td><td>論主不為「空」辯護，直接把座標移到「心」——「若觀諸法常畢竟空，取相心著，是為惡邪見；若觀空不著，不生邪見，是為法忍」（把辯論從本體論翻轉為認識論/心性論）</td></tr><tr><td>取相心著vs觀空不著</td><td>同一個「空」，落在「取相心著」的心成斷滅惡邪、落在「觀空不著」的心成清淨法忍——「空」是中性的觀察結果，決定善惡的是能觀之心有沒有再度抓取</td></tr></tbody></table><table class="c15p13-tbl"><caption>三、三種行清淨與空亦復空（三輪體空·佛道初相偈）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>三種行清淨（三輪體空）</td><td>「不見忍辱法（忍法空）、不見己身（能忍者空）、不見罵辱人（所對境空）；不戲諸法」——三者同時觀空，無一處可生「我被冒犯」的反應（<b>動態抵消而非壓抑</b>）</td></tr><tr><td>不動不退</td><td>連「我正在修三輪體空」這層微細戲論也放下，才名清淨法忍；面對極端楚毒不動不退</td></tr><tr><td>空亦復空</td><td>「心亦不著空」即「<b>空亦復空</b>」——連「空」也不執；《中論》「大聖說空法，為離諸見故；若復見有空，諸佛所不化」（立→破→超三階辯證）</td></tr></tbody></table><p class="c15p13-note">本品是「當般若遇見羼提」——不再停留在「遇罵不瞋」的外相忍辱，而追問：菩薩在修證至「諸法皆空」的當下為什麼還需要「忍」？他要忍的是「空」這個真理對一切既有認知框架的徹底解構（對空性本身的安住）。三種行清淨的「抵消而非壓抑」：不是壓住怒氣，而是構成「怒氣」的三個支點（我、他、事）當下無從成立，怒氣自然無所附麗。</p></div></div>
+<script id="wy-c15p13-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c15p13Btn"),BOX=document.getElementById("c15p13Box"),MODAL=document.getElementById("c15p13Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=12;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c15p13Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C15P13:END-->
 </body>
 </html>
