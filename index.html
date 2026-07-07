@@ -724,5 +724,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C15P2:END-->
+<!--WY-C15P3:BEGIN-->
+<style id="wy-c15p3-css">
+.c15p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c15p3-fabbox.show{display:block;}
+.c15p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c15p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c15p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c15p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c15p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c15p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c15p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c15p3-modal.open{display:flex;}
+.c15p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c15p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c15p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c15p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c15p3-close:hover{background:#e3d5b8;}
+.c15p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c15p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c15p3-tbl th,.c15p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c15p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c15p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c15p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c15p3-tbl b{color:#8b2500;}
+.c15p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c15p3-note b{color:#8b2500;}
+@media(max-width:900px){.c15p3-fabbox{right:14px;}.c15p3-tbl{font-size:11.5px;}.c15p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c15p3-fabbox" id="c15p3Box"><button class="c15p3-btn" id="c15p3Btn" type="button" aria-label="開啟全景總表"><span class="c15p3-ic">▦</span><span class="c15p3-ls"><span class="c15p3-l1">本品 · 法忍·結使未斷而能不隨</span><span class="c15p3-l2">四層階梯 · 絕對駕馭</span></span></button></div><div class="c15p3-modal" id="c15p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c15p3-card"><button class="c15p3-close" id="c15p3Close" type="button" aria-label="關閉">×</button><h3>卷十五·第三品 法忍·結使未斷而能不隨 · 全景總表</h3><p class="sub">卷十五・第三品｜結使未斷而能不隨・四層階梯・肥羊獅王繫賊・正思惟・性空二諦不二</p><table class="c15p3-tbl"><caption>一、四層邏輯遞進階梯（技術→見地·本品主骨架）</caption><thead><tr><th>層</th><th>喻與內容</th></tr></thead><tbody><tr><td>技術控制</td><td><b>肥羊無脂喻</b>——智臣以草穀養羊、日三以狼威嚇，羊肥而無脂；以無常觀驚嚇五欲，有感知而不黏著（以毒攻毒）</td></tr><tr><td>身分格調</td><td><b>獅王放人喻</b>——福德厚度使高貴感自然抑制反應；心柔軟、結使薄</td></tr><tr><td>戰略選擇</td><td><b>繫賊修業喻</b>——主動留惑，煩惱轉為度眾燃料；為眾生故久住世間</td></tr><tr><td>究極見地</td><td><b>實相無二</b>——生死即涅槃；對立自性解構、認知崩塌</td></tr></tbody></table><table class="c15p3-tbl"><caption>二、三態判讀與正思惟（凡夫/菩薩/阿羅漢）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>核心悖論</td><td>「菩薩於諸煩惱中應當修忍，不應斷結」——若斷結墮阿羅漢道、與根敗無異（叫訓練有素的戰士不扣扳機）</td></tr><tr><td>三態對比</td><td>凡夫（隨煩惱流轉）、阿羅漢（斷結入涅槃）、菩薩（結使未斷而能不隨·遮而不斷）</td></tr><tr><td>正思惟</td><td>「正思惟故，雖有煩惱而能不隨」——六重「復次」是正思惟在各面向的落地</td></tr></tbody></table><table class="c15p3-tbl"><caption>三、三大支柱與新定義（性空·二諦·不二）</caption><thead><tr><th>支柱</th><th>內容</th></tr></thead><tbody><tr><td>煩惱性空</td><td>諸法實相不生不滅、煩惱本質如幻——「不斷亦不隨」（如幻不礙涅槃、知空不被騙）</td></tr><tr><td>二諦圓融</td><td>以有空義故一切法得成——雙軌並運</td></tr><tr><td>不二法門</td><td>生死涅槃一無二</td></tr><tr><td>法忍新定義</td><td>不是被動「忍耐」，而是基於技術、福德、戰略、空性智慧的「<b>絕對駕馭</b>」（四維並駕齊驅，任一不足皆落偏鋒）</td></tr></tbody></table><p class="c15p3-note">「法忍」不是「忍耐世間辱罵」，而是在煩惱、生老病死、深法實相三者中都能安住不動的「絕對駕馭力」。三演算法（Protocol A/B/C）對治貪瞋癡：養羊去脂（對治貪·三狼觀想）、繫賊為奴（對治瞋）、獅王自居（對治懦弱）。菩薩四維與聲聞「一力直驅」（純以戒定慧斷煩惱）不同——只修技術無福德會硬忍斷裂、只修福德無戰略變人天福報、只修戰略無智慧變權術被煩惱反噬。</p></div></div>
+<script id="wy-c15p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c15p3Btn"),BOX=document.getElementById("c15p3Box"),MODAL=document.getElementById("c15p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c15p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C15P3:END-->
 </body>
 </html>
