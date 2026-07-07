@@ -777,5 +777,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C15P3:END-->
+<!--WY-C15P4:BEGIN-->
+<style id="wy-c15p4-css">
+.c15p4-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c15p4-fabbox.show{display:block;}
+.c15p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c15p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c15p4-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c15p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c15p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c15p4-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c15p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c15p4-modal.open{display:flex;}
+.c15p4-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c15p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c15p4-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c15p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c15p4-close:hover{background:#e3d5b8;}
+.c15p4-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c15p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c15p4-tbl th,.c15p4-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c15p4-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c15p4-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c15p4-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c15p4-tbl b{color:#8b2500;}
+.c15p4-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c15p4-note b{color:#8b2500;}
+@media(max-width:900px){.c15p4-fabbox{right:14px;}.c15p4-tbl{font-size:11.5px;}.c15p4-card{padding:26px 14px 16px;}}
+</style>
+<div class="c15p4-fabbox" id="c15p4Box"><button class="c15p4-btn" id="c15p4Btn" type="button" aria-label="開啟全景總表"><span class="c15p4-ic">▦</span><span class="c15p4-ls"><span class="c15p4-l1">本品 · 一相無二</span><span class="c15p4-l2">三稜鏡歸一 · 破異相不著一</span></span></button></div><div class="c15p4-modal" id="c15p4Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c15p4-card"><button class="c15p4-close" id="c15p4Close" type="button" aria-label="關閉">×</button><h3>卷十五·第四品 一相無二 · 全景總表</h3><p class="sub">卷十五・第四品｜可識可知可緣・三維度歸一・破異相不著一・藥病辯證・緣起離四句</p><table class="c15p4-tbl"><caption>一、三維度尋找「一相」（五段復次·本品主骨架）</caption><thead><tr><th>維度</th><th>內容</th></tr></thead><tbody><tr><td>認識論</td><td>可識相（六識識六塵，一切法皆被識別的對象）·可知相（四諦十六智所知）·可緣相（六識及相應法所緣）——皆可被識/知/緣，故言一</td></tr><tr><td>數量論</td><td>積一成多——一切法各皆一，一復有一名為二…乃至千萬，皆是一而<b>假名</b>為千萬</td></tr><tr><td>存在論</td><td>有相、法相——一切物名為法，法相故名為一</td></tr></tbody></table><table class="c15p4-tbl"><caption>二、破異相不著一（藥病辯證·雷霆一擊）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>最大陷阱</td><td>若推演至「萬法歸一」，是否落入外道「神我/梵」的實體一元論？——建立永恆不變的「一」就違背緣起性空、使中觀淪為常見</td></tr><tr><td>破異相不著一</td><td>前半「破異相」完成階段性任務（對治差別）、後半「不著一」掃蕩對治工具本身的執著——「一」不是本體論終極實體，而是<b>認識論上的破執兵器</b></td></tr><tr><td>藥與病辯證</td><td>「一」與「異」如藥與病——用「一」斬斷對差別相的執著，任務完成後連「一」這把刀也放下</td></tr></tbody></table><table class="c15p4-tbl"><caption>三、三大心法與中論鑰匙（平等/解構/無住）</caption><thead><tr><th>心法</th><th>內容</th></tr></thead><tbody><tr><td>平等觀</td><td>面對順逆境（毀譽得失），將毀譽視為「異相（劇情）」、看透皆是「可緣之法（光影）」——抽離情緒安住平等</td></tr><tr><td>解構觀</td><td>面對繁雜萬法焦慮，啟動數量觀洞察「千萬皆是一的無意義累積與假名施設」——降維簡化</td></tr><tr><td>無住觀</td><td>當升起對「歸一」境界的執著，立即提醒「一亦是假名」隨即掃蕩——捨筏登岸不背舟筏</td></tr><tr><td>中論兩鑰匙</td><td>緣起性空（萬法因緣生無自性→一相無二）＋離四句（離一/異/亦一亦異/非一非異→不著一）</td></tr></tbody></table><p class="c15p4-note">由「內忍（生忍）」昇華到「法忍」——法忍並非意志力的壓抑，而是「觀一切法一相無二、深入乃至無生法忍」的本體論介入。龍樹用歸納法把森羅萬象放進「三稜鏡」（認識論/數量論/存在論）折射，找出一切法的最大公約數「一」。收攝：<b>不一不異名實相，安住此理即法忍</b>。口訣：相異皆緣起，性空即是一；一亦無自性，故名法忍力。</p></div></div>
+<script id="wy-c15p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c15p4Btn"),BOX=document.getElementById("c15p4Box"),MODAL=document.getElementById("c15p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c15p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C15P4:END-->
 </body>
 </html>
