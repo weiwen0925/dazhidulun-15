@@ -2060,5 +2060,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P1:END-->
+<!--WY-BH15P2:BEGIN-->
+<style id="wy-bh15p2-css">
+.bh15p2-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p2-fabbox.show{display:block;}
+.bh15p2-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p2-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p2-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p2-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p2-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p2-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p2-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p2-modal.open{display:flex;}
+.bh15p2-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p2-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p2-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p2-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p2-close:hover{background:#dde2e6;}
+.bh15p2-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p2-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p2-tbl th,.bh15p2-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p2-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p2-tbl thead th:nth-child(1){width:32%;}.bh15p2-tbl thead th:nth-child(2){width:41%;}.bh15p2-tbl thead th:nth-child(3){width:27%;}
+.bh15p2-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p2-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p2-guan{background:#eef2f5;color:#37505f;}
+.bh15p2-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p2-tbl tbody tr:nth-child(even) td.bh15p2-guan{background:#e8eef2;}
+.bh15p2-tbl tbody tr:nth-child(even) td.bh15p2-qa{background:#e7ecdb;}
+.bh15p2-tbl b{color:#8b2500;}
+.bh15p2-guan b{color:#2f6b5a;}
+.bh15p2-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p2-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p2-fabbox{right:14px;}.bh15p2-tbl{font-size:11px;}.bh15p2-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p2-fabbox" id="bh15p2Box"><button class="bh15p2-btn" id="bh15p2Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p2-ic">譯</span><span class="bh15p2-ls"><span class="bh15p2-l1">本品 · 原文·白話·中觀</span><span class="bh15p2-l2">白話翻譯表</span></span></button></div><div class="bh15p2-modal" id="bh15p2Modal" role="dialog" aria-modal="true"><div class="bh15p2-card"><button class="bh15p2-close" id="bh15p2Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第2品 白話翻譯表（內忍法）</h3><p class="sub">大智度論卷十五·內忍法 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p2-tbl"><caption>內忍法 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p2-qa">問曰：云何內心法中能忍？</td><td>問道：那麼在內心之法當中，要如何才能安忍呢？</td><td class="bh15p2-guan"><b>從外境轉向內心的提問</b>——前面討論的是對外在寒熱風雨等無情之境的忍，此問則將焦點轉向內心煩惱本身，開啟「內忍」（對治自身煩惱結使）的討論。</td></tr><tr><td class="bh15p2-qa">答曰：菩薩思惟：「我雖未得道，諸結未斷，若當不忍，與凡人不異，非為菩薩。」復自思惟：「若我得道，斷諸結使，則無法可忍。」</td><td>回答：菩薩思惟：「我雖然還沒有證得聖道，種種煩惱結使都還未斷除，可是如果因此就放縱不忍，那我與一般凡夫又有什麼不同呢？這樣就稱不上是菩薩了。」又進一步思惟：「反過來說，如果我已經證得聖道、斷盡了一切煩惱結使，那時便沒有什麼煩惱可讓我修忍了。」</td><td class="bh15p2-guan"><b>煩惱未斷是修忍的必要條件</b>——這一組雙重思惟精確界定了「修忍」得以成立的臨界狀態：菩薩因尚未斷惑而仍有可忍之境（不同於凡夫的放縱），又因已發菩提心而不隨煩惱流轉（不同於凡夫），煩惱未斷不是修道的缺陷，反而是菩薩道之所以需要「忍」這一法門的結構性前提——沒有煩惱，便無所謂忍辱可修。</td></tr><tr><td class="bh15p2-src">復次，「飢渴、寒熱，是外魔軍；結使、煩惱，是內魔賊。我當破此二軍以成佛道；若不爾者，佛道不成。」</td><td>再者，菩薩思惟：「飢渴、寒熱這些屬於外在的魔軍；結使、煩惱這些則是內在的魔賊。我應當要擊破這內外兩支軍隊，才能成就佛道；如果不能擊破它們，佛道便無法成就。」</td><td class="bh15p2-guan"><b>內外魔軍的戰略區分</b>——將修道路上的一切障礙劃分為「外魔」（環境的飢渴寒熱等逆緣）與「內魔」（自心的煩惱結使），並將二者並列為必須共同擊破的對象，這一區分為下文佛陀降魔的著名公案立下了理論框架：真正的魔軍不僅是外在的誘惑威脅，更是自心的煩惱本身。</td></tr><tr><td class="bh15p2-src">如說佛苦行六年，魔王來言：「剎利貴人，汝千分生中正有一分活耳！速起還國，布施修福，可得今世後世、人中天上之樂；道不可得，汝唐勤苦。汝若不受軟言，守迷不起，我當將大軍眾來擊破汝！」菩薩言：「我今當破汝大力內軍，何況外軍？」魔言：「何等是我內軍？」</td><td>就如同經典所說，佛陀苦行六年之時，魔王前來對他說：「你這位剎帝利貴族出身之人，你現在千分生機之中僅存一分存活的機會罷了！趕快起身回到王宮去吧，行布施、修福德，還能得到今生、來世，人間、天上的種種快樂；至於成佛之道，是不可能得到的，你只是在白白地辛勤受苦罷了。你如果不肯聽從我這番好言相勸，仍然執迷不悟、不肯起身，我就要率領大軍前來擊破你！」菩薩回答道：「我如今正要擊破的是你強大的內軍，又何況是外在的軍隊呢？」魔王便問：「什麼是我的內軍？」</td><td class="bh15p2-guan"><b>降魔公案作為內忍的具體範例</b>——佛陀降魔的故事被引為「內忍」的實例：魔王以世間享樂為誘、以武力威脅為逼，正是「外魔軍」的具象化；而菩薩「先破內軍，何況外軍」的回答，直指修道真正的對手從來不是外在的威逼利誘，而是自心當中會被這些外境所牽動的煩惱本身，這正呼應本章開頭「結使、煩惱是內魔賊」的定義。</td></tr><tr><td class="bh15p2-src">菩薩於此諸軍雖未能破，著忍辱鎧，捉智慧劍，執禪定楯，遮諸煩惱箭，是名內忍。</td><td>菩薩對於這些內在的魔軍，雖然一時之間還無法將其徹底摧毀斷盡，但只要身披忍辱的鎧甲，手持智慧的寶劍，握著禪定的盾牌，用以遮擋煩惱如箭矢一般的攻擊，這就稱為「內忍」。</td><td class="bh15p2-guan"><b>內忍的三重武裝·忍辱鎧智慧劍禪定楯</b>——此句以戰爭意象總結內忍的修行結構：忍辱如鎧甲（防禦煩惱的傷害）、智慧如劍（洞察煩惱的虛妄）、禪定如盾（穩固心念不被煩惱動搖），三者合一構成對治內在魔軍的完整裝備；值得注意的是，這裡並非要求「斷盡」煩惱，而是強調在煩惱未斷之時仍能「遮擋」而不隨其流轉，呼應前文「結使未斷而能不隨」的立論。</td></tr><tr><td class="bh15p2-src">如是等軍眾，厭沒出家人。</td><td>像這樣種種的（十支）魔軍，最容易使出家修道之人沉沒溺陷其中而無法自拔。</td><td class="bh15p2-guan"><b>十軍的危險性尤在修道人</b>——特別點出這些內在魔軍（即著名的「十軍」：欲、憂愁、飢渴、渴愛、睡眠、怖畏、疑悔、瞋恚、利養虛稱、自高慢他）對「出家人」（一切發心修道者）具有更強的殺傷力，因為修道者往往自恃已在修行道上，反而容易對這些細微的內在魔軍失去警覺，於不知不覺中沉沒其中。</td></tr><tr><td class="bh15p2-src">諸法性常空，心亦不著空。</td><td>一切諸法的本性恆常是空的，而這顆能觀照的心，也不會執著於「空」這個概念本身。</td><td class="bh15p2-guan"><b>空亦不可著·般若中道的收束</b>——此句是內忍一節收束於般若空觀的關鍵一筆：不僅要照見諸法性空以破除對煩惱、外境的執著，更進一步連「空」這個觀念本身也不應執著，這正是《大智度論》一貫「畢竟空亦不可著」的中道立場，避免修行者落入「耽空滯寂」的另一種偏執，為下一品的討論埋下伏筆。</td></tr></tbody></table><p class="bh15p2-note">大智度論卷十五第2品「內忍法」原文·白話·中觀三欄對照。以「云何內心法中能忍」發問，答以「結使未斷若不忍與凡人無異、若已斷結則無法可忍」雙重思惟，確立煩惱未斷正是修忍之必要條件；繼以內外魔軍之戰略區分、佛陀苦行六年降魔公案為喻，明「忍辱鎧·智慧劍·禪定楯」三重武裝之內忍要義；終以「諸法性常空，心亦不著空」收束於般若中道。　中觀關鍵詞：煩惱未斷是修忍的必要條件　內外魔軍的戰略區分　內忍的三重武裝　空亦不可著的般若中道</p></div></div>
+<script id="wy-bh15p2-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p2Btn"),BOX=document.getElementById("bh15p2Box"),MODAL=document.getElementById("bh15p2Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=1;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p2Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p2Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P2:END-->
 </body>
 </html>
