@@ -2264,5 +2264,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P5:END-->
+<!--WY-BH15P6:BEGIN-->
+<style id="wy-bh15p6-css">
+.bh15p6-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p6-fabbox.show{display:block;}
+.bh15p6-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p6-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p6-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p6-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p6-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p6-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p6-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p6-modal.open{display:flex;}
+.bh15p6-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p6-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p6-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p6-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p6-close:hover{background:#dde2e6;}
+.bh15p6-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p6-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p6-tbl th,.bh15p6-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p6-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p6-tbl thead th:nth-child(1){width:32%;}.bh15p6-tbl thead th:nth-child(2){width:41%;}.bh15p6-tbl thead th:nth-child(3){width:27%;}
+.bh15p6-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p6-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p6-guan{background:#eef2f5;color:#37505f;}
+.bh15p6-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p6-tbl tbody tr:nth-child(even) td.bh15p6-guan{background:#e8eef2;}
+.bh15p6-tbl tbody tr:nth-child(even) td.bh15p6-qa{background:#e7ecdb;}
+.bh15p6-tbl b{color:#8b2500;}
+.bh15p6-guan b{color:#2f6b5a;}
+.bh15p6-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p6-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p6-fabbox{right:14px;}.bh15p6-tbl{font-size:11px;}.bh15p6-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p6-fabbox" id="bh15p6Box"><button class="bh15p6-btn" id="bh15p6Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p6-ic">譯</span><span class="bh15p6-ls"><span class="bh15p6-l1">本品 · 原文·白話·中觀</span><span class="bh15p6-l2">白話翻譯表</span></span></button></div><div class="bh15p6-modal" id="bh15p6Modal" role="dialog" aria-modal="true"><div class="bh15p6-card"><button class="bh15p6-close" id="bh15p6Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第6品 白話翻譯表（法忍·信受三印不失中道）</h3><p class="sub">大智度論卷十五·法忍信受三印不失中道 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p6-tbl"><caption>法忍信受三印不失中道 · 原文｜白話翻譯｜中觀概念（共2段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p6-src">復次，菩薩雖未得無漏道，結使未斷，能信無漏聖法及三種法印：一者、一切有為生法無常等印；二者、一切法無我印；三者、涅槃實法印。得道賢聖人，自得自知；菩薩雖未得道，能信能受，是名法忍。</td><td>再者，菩薩雖然尚未證得無漏聖道，煩惱結使也還沒有斷除，卻能夠信受無漏聖法以及三種法印：第一是一切有為生滅之法皆是無常等印；第二是一切法無我印；第三是涅槃寂靜的實法印。已經證得聖道的賢聖之人，是以自身親證、自己了知這些真理；而菩薩雖然尚未證得聖道，卻能夠信解、能夠承受這些真理，這就稱為『法忍』。</td><td class="bh15p6-guan"><b>信智互攝·以信代慧的知識論橋樑</b>——此段揭示兩種截然不同的知識論位階：已證聖道者是「自得自知」的親證現量，未證道的菩薩則是「能信能受」的信解承擔；法忍在此被定義為一座橋樑——在無漏智尚未現前之前，先以「信受」作為與真理對接的端口，使凡夫菩薩得以安立於無漏聖法之中。</td></tr><tr><td class="bh15p6-src">復次，於十四難不答法中有常、無常等，觀察無礙，不失中道，是法能忍，是為法忍。</td><td>再者，對於十四種不予解答的難題之中，諸如世間是常或無常等種種問題，菩薩都能夠觀察無礙、不落於任何一邊的偏執，始終不失中道，能夠安忍於這樣的法，這就稱為『法忍』。</td><td class="bh15p6-guan"><b>十四難不失中道·止息戲論即法忍</b>——十四難（如世間常無常、有邊無邊、如來滅後有無等）皆是預設「主體實有」才會產生的形而上學戲論，菩薩之所以能「觀察無礙」，正因為照見這些問題的主體本空、如幻化般了不可得，因而不隨戲論所轉、亦不落有無兩邊的偏執，此即以般若空觀貫穿的中道法忍。</td></tr></tbody></table><p class="bh15p6-note">大智度論卷十五第6品「法忍·信受三印不失中道」原文·白話·中觀三欄對照。本品以兩段「復次」界定法忍：其一謂菩薩雖結使未斷、未證無漏道，卻能信受無漏聖法及三種法印（無常印·無我印·涅槃印），以「信受」作為未證者與真理的對接端口；其二謂於十四難不答法中觀察無礙、不失中道，止息戲論即是法忍。　中觀關鍵詞：信智互攝　三種法印　自得自知與能信能受　十四難不答法　不失中道</p></div></div>
+<script id="wy-bh15p6-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p6Btn"),BOX=document.getElementById("bh15p6Box"),MODAL=document.getElementById("bh15p6Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=5;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p6Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p6Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P6:END-->
 </body>
 </html>
