@@ -2519,5 +2519,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P10:END-->
+<!--WY-BH15P11:BEGIN-->
+<style id="wy-bh15p11-css">
+.bh15p11-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p11-fabbox.show{display:block;}
+.bh15p11-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p11-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p11-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p11-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p11-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p11-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p11-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p11-modal.open{display:flex;}
+.bh15p11-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p11-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p11-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p11-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p11-close:hover{background:#dde2e6;}
+.bh15p11-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p11-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p11-tbl th,.bh15p11-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p11-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p11-tbl thead th:nth-child(1){width:32%;}.bh15p11-tbl thead th:nth-child(2){width:41%;}.bh15p11-tbl thead th:nth-child(3){width:27%;}
+.bh15p11-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p11-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p11-guan{background:#eef2f5;color:#37505f;}
+.bh15p11-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p11-tbl tbody tr:nth-child(even) td.bh15p11-guan{background:#e8eef2;}
+.bh15p11-tbl tbody tr:nth-child(even) td.bh15p11-qa{background:#e7ecdb;}
+.bh15p11-tbl b{color:#8b2500;}
+.bh15p11-guan b{color:#2f6b5a;}
+.bh15p11-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p11-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p11-fabbox{right:14px;}.bh15p11-tbl{font-size:11px;}.bh15p11-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p11-fabbox" id="bh15p11Box"><button class="bh15p11-btn" id="bh15p11Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p11-ic">譯</span><span class="bh15p11-ls"><span class="bh15p11-l1">本品 · 原文·白話·中觀</span><span class="bh15p11-l2">白話翻譯表</span></span></button></div><div class="bh15p11-modal" id="bh15p11Modal" role="dialog" aria-modal="true"><div class="bh15p11-card"><button class="bh15p11-close" id="bh15p11Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第11品 白話翻譯表（空智法性·破有為無為）</h3><p class="sub">大智度論卷十五·空智法性·破有為無為 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p11-tbl"><caption>空智法性·破有為無為 · 原文｜白話翻譯｜中觀概念（共8段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p11-src">復次，一切法有二種：色法、無色法。色法分析乃至微塵，散滅無餘，如〈檀波羅蜜品〉破施物中說。無色法五情所不知故，意情生、住、滅時觀故，知心有分，有分故無常，無常故空，空故非有。</td><td>再者，一切法可分為兩種：色法與無色法。色法若加以分析，乃至分析到極微塵的程度，終究散滅無餘，這在〈檀波羅蜜品〉破斥布施之物的段落中已經說明過。無色法（心法）則是五種感官所無法覺知的，只能透過意識覺察心念生起、安住、滅去的變化過程來觀察；由此可知心是有分位差別的，既有分位差別便是無常，既是無常便是空，既是空便不是實有。</td><td class="bh15p11-guan"><b>色心二法皆歸於空</b>——本品開宗明義將一切法收攝為色、心二類：色法可由物理分析（極微）而顯其空；心法則由時間分位（生住滅）的觀察而顯其空。二者路徑不同，但同歸「無常故空、空故非有」的結論，為全品「空智門」的觀行奠定總綱。</td></tr><tr><td class="bh15p11-src">彈指頃有六十時，一一時中，心有生、滅；相續生故，知是貪心、是瞋心、是癡心，是信心、清淨智慧禪定心。行者觀心生、滅，如流水、燈焰，此名入空智門。</td><td>在一彈指的極短時間裡，就含有六十個剎那；每一個剎那當中，心念都有生起與滅去。由於心念相續不斷地生滅，所以能分辨出這是貪心、這是瞋心、這是癡心，或是信心、清淨的智慧心、禪定心等等。修行人如此觀察心念的生滅，就如同觀察流水一般相續不斷、如同觀察燈焰一般剎那變異，這就稱為「進入空智之門」。</td><td class="bh15p11-guan"><b>剎那生滅觀·入空智之門</b>——本段提出具體的禪觀方法：以極細的時間分析（彈指六十剎那）觀照心念相續生滅，如流水燈焰般剎那不住；透過這種觀行親證心念無常、無常故空的實相，說明「空智門」不僅是理論推演，更是可實修的止觀法要。</td></tr><tr><td class="bh15p11-src">復次，佛說有為法，皆有三相。若極少時中生而無滅者，是為非有為法。若極少時中心生、住、滅者，何以但先生而後滅，不先滅而後生？</td><td>再者，佛陀說一切有為法都具有「生、住、滅」三種相狀。如果在極短暫的時間中只有生起而沒有滅去，那就不是有為法了（因為有為法必具三相）。如果在極短暫的時間中心念確實有生、住、滅，那麼為什麼一定是先生起而後滅去，而不是先滅去而後生起呢？</td><td class="bh15p11-guan"><b>以生滅先後詰問三相能否成立</b>——本段開始以邏輯詰難的方式檢驗「三相」（生住滅）能否在一剎那中真實安立：既然生與滅同屬一法之相，何以生必在滅之先？這個追問直指「三相」若被當作實有次第的自性法，便無法自圓其說，為下文破斥有為法自性鋪路。</td></tr><tr><td class="bh15p11-src">復次，若先有心後有生，則心不待生。何以故？先已有心故。若先有生，則生無所生。又生、滅性相違，生則不應有滅，滅時不應有生。以是故，一時不可得，異亦不可得，是即無生。</td><td>再者，如果說先有心而後才有「生」，那麼這個心就不必依待「生」才能成立——因為它早已存在了。如果說先有「生」而後才有心，那麼這個「生」就沒有它所要生起的對象了（生無所生）。而且，「生」與「滅」的體性本是互相違反的：正當生起的時候不應該同時有滅，正當滅去的時候也不應該同時有生。所以，說生滅「同時」發生不可得，說生滅「異時」（先後）發生也同樣不可得，由此可知：其實根本沒有真實的「生」可言。</td><td class="bh15p11-guan"><b>同時異時皆不可得·徹底破生</b>——這是本品最核心的邏輯論證：無論主張心與生「同時」還是「異時（先後）」成立，都會導致自相矛盾；窮盡一切可能的時間關係之後，「生」這個概念本身便無立足之地，這正是中觀「離四句」式的窮盡式論證，直接導向「無生」的結論。</td></tr><tr><td class="bh15p11-src">若無生，則無住、滅；若無生、住、滅，則無心數法；無心數法，則無心不相應諸行。</td><td>如果沒有真實的「生」，那麼也就沒有真實的「住」與「滅」；如果生、住、滅三相都不成立，那麼也就沒有真實的心所法（心數法）；沒有真實的心所法，也就沒有與心不相應的種種有為行法。</td><td class="bh15p11-guan"><b>破生為起點·層層連破一切有為法</b>——承接上段「無生」的結論，本段以連鎖推理層層擴大戰果：無生則無住滅，無住滅則無心所法，無心所法則無不相應行法——整個有為法體系的三大類（心法、心所法、不相應行法）皆隨「生」之被破而全數瓦解，展現中觀論證環環相扣、以簡馭繁的力道。</td></tr><tr><td class="bh15p11-src">色、無色法無故，無為法亦無。何以故？因有為故有無為，若無有為則亦無無為。</td><td>由於色法、無色法（有為法）既已被證明沒有真實自性，那麼「無為法」也同樣是不可得的。為什麼呢？因為「無為」這個概念是相對於「有為」而施設安立的，如果沒有「有為」，也就無所謂「無為」可言了。</td><td class="bh15p11-guan"><b>有為無為相待而立·雙破以顯中道</b>——這是全品破斥的關鍵一躍：不僅有為法無自性，就連常被誤認為「絕對真實、恆常不變」的無為法（如虛空、涅槃）也是相待於有為法而施設的概念，並非獨立自存的實體；有為、無為若能雙破，才不會落入「以無為法為究竟實有」的微細法執。</td></tr><tr><td class="bh15p11-src">復次，見作法無常故，知不作法常。若然者，今見作法是有法，不作法應是無法。以是故，常法不可得。</td><td>再者，（有人主張）因為看見「作法」（有為法）是無常的，所以推知「不作法」（無為法）必定是常的。如果真是這樣，那麼既然眼前所見的「作法」是「有」之法，相對而言「不作法」就應該是「無」之法（無可指認、不可見）。既然如此，所謂恆常不變的「常法」，其實是不可得的。</td><td class="bh15p11-guan"><b>以對舉邏輯反破常法實有</b>——這是針對外道「以無常推知有常」的推論方式進行反破：若「作法（有）」與「不作法（無）」是相對而立的兩端，那麼被歸為「不作法」一邊的「常法」便同時落入「無」的一邊，成為不可指認、不可得之物；如此一來，執「常法」為實有反而自相矛盾，這正是本品對「常見」最後一擊的收束論證。</td></tr><tr><td class="bh15p11-src">復次，外道及佛弟子，說常法有同、有異：同者，虛空、涅槃；外道有神、時、方、微塵、冥初，如是等名為異。又佛弟子說：「非數緣滅是常。」又復言：「滅因緣法常，因緣生法無常。」</td><td>再者，外道與佛弟子對於「常法」的說法有相同之處，也有不同之處：相同的部分，是雙方都承許虛空、涅槃是常法；不同的部分，是外道另外主張神我、時間、方所、微塵、冥初（原初本體）等等也是常法，這些是佛弟子所不共許的。此外，佛弟子中還有人說：「非數緣滅（自然滅盡而非由智慧斷除者）是常法。」又有人說：「滅除因緣的法（無為法）是常，而由因緣所生的法是無常。」</td><td class="bh15p11-guan"><b>臚列諸家常法異說·為下品總破鋪陳</b>——本品收尾以客觀陳述的方式，臚列外道與佛教內部（乃至部派）對「常法」內涵的種種異說，先立靶再破——這正是論辯文體常見的收束手法，為後續章品進一步辨析、破斥各家對「常」的執著預留伏筆與過渡。</td></tr></tbody></table><p class="bh15p11-note">大智度論卷十五第11品「空智法性」原文·白話·中觀三欄對照。全品先立色心二法皆歸空之總綱，繼以剎那生滅觀（彈指六十時）作為入空智門的實修法要，再以邏輯窮盡「同時／異時」二種可能徹底破生，層層連破住、滅、心數法、不相應行，終及有為無為相待而立、常法不可得，末段臚列外道與佛弟子對常法的異說，為後續章品鋪陳。　中觀關鍵詞：剎那生滅　窮盡式破生　有為無為相待　常法不可得</p></div></div>
+<script id="wy-bh15p11-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p11Btn"),BOX=document.getElementById("bh15p11Box"),MODAL=document.getElementById("bh15p11Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=10;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p11Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p11Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P11:END-->
 </body>
 </html>
