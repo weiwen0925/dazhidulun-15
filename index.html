@@ -2774,5 +2774,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P15:END-->
+<!--WY-BH15P16:BEGIN-->
+<style id="wy-bh15p16-css">
+.bh15p16-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p16-fabbox.show{display:block;}
+.bh15p16-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p16-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p16-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p16-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p16-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p16-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p16-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p16-modal.open{display:flex;}
+.bh15p16-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p16-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p16-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p16-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p16-close:hover{background:#dde2e6;}
+.bh15p16-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p16-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p16-tbl th,.bh15p16-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p16-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p16-tbl thead th:nth-child(1){width:32%;}.bh15p16-tbl thead th:nth-child(2){width:41%;}.bh15p16-tbl thead th:nth-child(3){width:27%;}
+.bh15p16-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p16-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p16-guan{background:#eef2f5;color:#37505f;}
+.bh15p16-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p16-tbl tbody tr:nth-child(even) td.bh15p16-guan{background:#e8eef2;}
+.bh15p16-tbl tbody tr:nth-child(even) td.bh15p16-qa{background:#e7ecdb;}
+.bh15p16-tbl b{color:#8b2500;}
+.bh15p16-guan b{color:#2f6b5a;}
+.bh15p16-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p16-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p16-fabbox{right:14px;}.bh15p16-tbl{font-size:11px;}.bh15p16-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p16-fabbox" id="bh15p16Box"><button class="bh15p16-btn" id="bh15p16Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p16-ic">譯</span><span class="bh15p16-ls"><span class="bh15p16-l1">本品 · 原文·白話·中觀</span><span class="bh15p16-l2">白話翻譯表</span></span></button></div><div class="bh15p16-modal" id="bh15p16Modal" role="dialog" aria-modal="true"><div class="bh15p16-card"><button class="bh15p16-close" id="bh15p16Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第16品 白話翻譯表（釋毘梨耶波羅蜜品·精進總綱：性空之鑰）</h3><p class="sub">大智度論卷十五·精進總綱：身精進與心精進 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p16-tbl"><caption>釋毘梨耶波羅蜜品·精進總綱：性空之鑰 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p16-qa">問曰：菩薩觀精進，有何利益而懃修不懈？ 答曰：一切今世、後世道德利益，皆由精進得。 復次，若人欲自度身，尚當懃急精進，何況菩薩誓願欲度一切！如讚精進偈中說：</td><td>問：菩薩觀察精進，能得到什麼樣的利益，因此勤修不懈呢？答：一切今生、來世在道德修行上的利益，都是憑藉精進而獲得的。再者，即使只是想度脫自身的人，尚且應當勤奮急切地精進，何況菩薩發下誓願要度脫一切眾生呢！正如〈讚精進偈〉中所說：</td><td class="bh15p16-guan"><b>精進總綱的開篇設問·自度與度他的張力</b>——本品以一問一答揭示全篇主旨：精進不只是個人修行的加速器，更是菩薩「誓願度一切」這一宏大願力得以兌現的必要動能。從「自度尚須懃急」推至「度一切更須精進」，用的是層遞論證法，為以下五段「復次」的層層鋪陳定下基調。</td></tr><tr><td class="bh15p16-src">有人不惜身，智慧心決定，如法行精進，所求事無難！如農夫懃修，所收必豐實；亦如涉遠路，懃則必能達。若得生天上，及得涅槃樂，如是之因緣，皆由精進力。非天非無因，自作故自得，誰有智慧人，而不自勉勵？三界火熾然，譬如大炎火，有智決斷人，乃能得免離！以是故佛告：阿難正精進，如是不懈怠，直至於佛道。勉強而懃修，穿地能通泉；精進亦如是，無求而不得。能如行道法，精進不懈者，無量果必得，此報終不失！</td><td>有人能不顧惜自身、以堅定的智慧之心如法精進修行，那麼所求之事便沒有難成的；就像農夫勤奮耕作、收成必定豐碩，也像跋涉遠路的人勤行不輟必能到達。無論是往生天上的果報、或是證得涅槃的安樂，這一切因緣都是憑藉精進的力量而成就；這既不是上天所賜，也不是無因而生，而是自作自得，哪一個有智慧的人會不自我勉勵？三界猶如烈火熾燃，就像一場巨大的火災，唯有具足智慧、當機立斷的人才能脫離。因此佛陀告訴阿難：唯有真正的精進、如此不懈怠地修行，才能一直到達成佛之道。勉力勤奮修行，就像掘地能挖通泉水一樣，精進也是如此，沒有求不到的事；只要能如法修行、精進不懈，必定能獲得無量的果報，這份果報終究不會失落！</td><td class="bh15p16-guan"><b>讚精進偈·十對譬喻鋪陳精進因果律</b>——這首偈頌以農夫耕作、涉遠路、掘地通泉等生活化譬喻，反覆申論「精進為因、果報必得」的因果必然性，並以「非天非無因，自作故自得」一句，明確排除「神授」與「偶然」兩種錯誤因果觀，直指佛法「自作自受」的緣起正見——這正是全品後段「中觀解構」章節所要進一步論證的哲學根基。</td></tr><tr><td class="bh15p16-src">復次，精進法是一切諸善法之根本，能出生一切諸道法，乃至阿耨多羅三藐三菩提，何況於小利！如毘尼中說：「一切諸善法，乃至阿耨多羅三藐三菩提，皆從精進不放逸生。」</td><td>再者，精進之法是一切善法的根本，能出生一切修道之法，乃至能出生無上正等正覺，更何況只是微小的利益呢！正如戒律書（毘尼）中所說：「一切善法，乃至無上正等正覺，都是從精進、不放逸而生起的。」</td><td class="bh15p16-guan"><b>精進為萬善之根本·引律證成</b>——龍樹將精進定位為一切善法（含世間小利與出世間無上菩提）共同的根源性條件，並援引戒律經典（毘尼）作為權威佐證，顯示這一命題並非論主個人臆說，而是佛教戒律傳統的共通見解，強化其論證的可信度。</td></tr><tr><td class="bh15p16-src">復次，精進能動發先世福德，如雨潤種，能令必生；此亦如是，雖有先世福德因緣，若無精進則不能生；乃至今世利尚不能得，何況佛道！</td><td>再者，精進能夠觸動、發起過去世所種下的福德，就像雨水滋潤種子，能使種子必定發芽生長；精進也是如此，雖然有過去世的福德因緣作為基礎，如果沒有精進，這些福德仍然無法生起發用；甚至連今生的利益都不能獲得，更何況是成就佛道呢！</td><td class="bh15p16-guan"><b>雨潤種之喻·福德的「發用」須待精進</b>——這一節與品15「福慧雙軌」的論證一脈相承：先世福德是「種子」，精進則是使種子破土發芽的「雨水」；沒有精進這一助緣，再深厚的福德潛能也只是休眠的種子，無法轉化為現實的果報，再次確立精進作為「緣起鏈」中不可或缺的動態環節。</td></tr><tr><td class="bh15p16-src">復次，諸大菩薩荷負眾生，受一切苦，乃至阿鼻泥犁中苦，心亦不懈，是為精進。</td><td>再者，諸位大菩薩肩負著度化眾生的重任，甘願承受一切痛苦，乃至承受阿鼻地獄那樣的極苦，內心依然不曾懈怠，這就叫做精進。</td><td class="bh15p16-guan"><b>荷負眾生·精進的極限測試</b>——若說前幾節精進偏重於「個人修道」的動能，此節則將精進的定義推向極致：連承受阿鼻地獄之苦都不改其心，這種「為眾生荷負一切苦而不懈」的精進，正是大乘菩薩道區別於聲聞獨善其身的關鍵標誌，也預告了品17「不自惜身」誓願的深化。</td></tr><tr><td class="bh15p16-src">復次，一切眾事，若無精進，則不能成。譬如下藥，以巴豆為主；若除巴豆，則無下力。如是意止、神足、根、力、覺、道，必待精進；若無精進，則眾事不辦。如戒唯在八道，不在餘處；信在根、力，餘處則無。如精進者，無處不有，既總眾法而別自有門。譬如無明使，遍在一切諸使中，而別有不共無明。</td><td>再者，世間一切事務，如果沒有精進，就不能成就。就好比瀉下之藥，是以巴豆為主要藥效成分；如果去除了巴豆，這帖藥就沒有瀉下的力量了。同樣的道理，四念處（意止）、四如意足（神足）、五根、五力、七覺分、八正道，都必須仰賴精進才能成就；如果沒有精進，種種修行之事便都辦不成。就像「戒」只存在於八正道之中，不存在於其他項目；「信」則存在於五根、五力之中，其他項目沒有。而精進則不同，它無處不在——既總攝於一切善法之中作為共通的成分，卻又自成一個獨立的法門。這就好比無明使（根本煩惱之一），雖然遍存於一切煩惱使之中，卻又另外有一個不與其他煩惱共有的「不共無明」。</td><td class="bh15p16-guan"><b>巴豆之喻·精進的「遍在性」與「別自有門」</b>——此節以精妙的法相分析，界定精進在三十七道品中的獨特地位：它既如巴豆般是「總攝眾法、缺之不成」的核心活性成分（遍在性），又如「不共無明」一般自成一個獨立的法門（別自有門）。這種「既遍且別」的雙重定位，正是本品標題「精進總綱」的義理核心，也為下文「性空之鑰」的中觀解構鋪陳了精確的法相基礎。</td></tr></tbody></table><p class="bh15p16-note">大智度論卷十五第16品「釋毘梨耶波羅蜜品」原文·白話·中觀三欄對照。全品以〈讚精進偈〉開篇，歷數精進為萬善根本、能動發先世福德、菩薩荷負眾生不懈，終以「巴豆之喻」界定精進在三十七道品中「遍在而又別自有門」的獨特地位，為「精進總綱」奠定完整的法相基礎。　中觀關鍵詞：讚精進偈　雨潤種喻　巴豆之喻　遍在性與別自有門</p></div></div>
+<script id="wy-bh15p16-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p16Btn"),BOX=document.getElementById("bh15p16Box"),MODAL=document.getElementById("bh15p16Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=15;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p16Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p16Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P16:END-->
 </body>
 </html>
