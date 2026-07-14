@@ -2570,5 +2570,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P11:END-->
+<!--WY-BH15P12:BEGIN-->
+<style id="wy-bh15p12-css">
+.bh15p12-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p12-fabbox.show{display:block;}
+.bh15p12-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p12-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p12-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p12-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p12-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p12-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p12-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p12-modal.open{display:flex;}
+.bh15p12-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p12-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p12-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p12-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p12-close:hover{background:#dde2e6;}
+.bh15p12-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p12-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p12-tbl th,.bh15p12-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p12-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p12-tbl thead th:nth-child(1){width:32%;}.bh15p12-tbl thead th:nth-child(2){width:41%;}.bh15p12-tbl thead th:nth-child(3){width:27%;}
+.bh15p12-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p12-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p12-guan{background:#eef2f5;color:#37505f;}
+.bh15p12-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p12-tbl tbody tr:nth-child(even) td.bh15p12-guan{background:#e8eef2;}
+.bh15p12-tbl tbody tr:nth-child(even) td.bh15p12-qa{background:#e7ecdb;}
+.bh15p12-tbl b{color:#8b2500;}
+.bh15p12-guan b{color:#2f6b5a;}
+.bh15p12-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p12-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p12-fabbox{right:14px;}.bh15p12-tbl{font-size:11px;}.bh15p12-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p12-fabbox" id="bh15p12Box"><button class="bh15p12-btn" id="bh15p12Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p12-ic">譯</span><span class="bh15p12-ls"><span class="bh15p12-l1">本品 · 原文·白話·中觀</span><span class="bh15p12-l2">白話翻譯表</span></span></button></div><div class="bh15p12-modal" id="bh15p12Modal" role="dialog" aria-modal="true"><div class="bh15p12-card"><button class="bh15p12-close" id="bh15p12Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第12品 白話翻譯表（破惡取空）</h3><p class="sub">大智度論卷十五·破惡取空 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p12-tbl"><caption>破惡取空 · 原文｜白話翻譯｜中觀概念（共10段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p12-src">若諸法無者，有二種：一者、常無，二者、斷滅故無。</td><td>如果說諸法是「無」，這其中又可分為兩種情況：一種是「本來就常無」（從未存在過）；另一種是「先有而後斷滅為無」。</td><td class="bh15p12-guan"><b>先辨「無」之二型·為破惡取空立靶</b>——本品開篇即精細區分「常無」與「斷滅無」兩種截然不同的「無」，避免籠統地把中觀的「空」與凡夫的「斷滅見」混為一談；這是破斥「惡取空」（誤解空為虛無斷滅）之前必要的概念釐清。</td></tr><tr><td class="bh15p12-src">若先有今無，若今有後無，是則斷滅。若然者，則無因緣；無因緣者，應一物中出一切物，亦應一切物中都無所出。</td><td>如果說先前有而現在無，或者現在有而以後無，這就是「斷滅」。如果真是這樣，那麼因果之間就沒有相續的因緣關係可言；沒有因緣的話，就會產生荒謬的結果：應該一物之中能生出一切萬物（因為毫無因果限制），也應該一切萬物之中什麼都生不出來（因為因果聯繫已斷）。</td><td class="bh15p12-guan"><b>斷滅則因果錯亂·雙重荒謬</b>——本段以歸謬法揭示「斷滅見」的內在矛盾：一旦否定因果相續，邏輯上便同時導向「任何物皆可生任何物」與「任何物皆不能生任何物」這兩種相反卻同樣荒謬的結論，充分暴露斷滅見無法自圓其說。</td></tr><tr><td class="bh15p12-src">後世中亦如是，若斷罪福因緣，則不應有貧富、貴賤之異，及墮惡道、畜生中。</td><td>來世的情況也是同樣的道理：如果罪業與福德的因緣被斷絕、不相續，那麼世間就不應該出現貧富、貴賤的差異，也不應該有墮入惡道、畜生道等果報的現象。</td><td class="bh15p12-guan"><b>斷滅見則業果體系全面崩解</b>——延續上段的因果荒謬，本段將論證落實到具體的倫理與輪迴果報層面：若持斷滅見，則現實中明明可見的貧富貴賤差異、善惡趣向等業果現象便完全失去解釋依據，這是以經驗事實反駁斷滅見的有力例證。</td></tr><tr><td class="bh15p12-src">若言常無，則無苦、集、滅、道；若無四諦，則無法寶；若無法寶，則無八賢聖道；若無法寶、僧寶，則無佛寶；若如是者，則破三寶。</td><td>如果說（諸法）是「本來就常無」，那麼苦、集、滅、道四聖諦也就不存在了；如果沒有四聖諦，就沒有「法寶」；如果沒有「法寶」，就沒有八賢聖道（修行證果的聖者僧眾）；如果沒有「法寶」與「僧寶」，也就沒有「佛寶」（因佛陀證悟、宣說之法而立）。如果是這樣，就等於徹底破壞了佛、法、僧三寶。</td><td class="bh15p12-guan"><b>執常無則三寶盡毀</b>——本段從教義根基層面推演「常無」見的後果：四諦、三寶是佛法安立的核心架構，若執「常無」見（否定一切法的存在基礎），則連帶四諦不成立、三寶盡失依據，這是從護持正法的角度，指出「常無」之見對佛教根本教理的破壞性。</td></tr><tr><td class="bh15p12-src">復次，若一切法實空者，則無罪福，亦無父母，亦無世間禮法，亦無善無惡。然則善惡同門，是非一貫，一切物盡無，如夢中所見。若言實無，有如是失，此言誰當信者！</td><td>再者，如果一切法真的是「空無所有」（如惡取空者所理解的那樣），那麼就沒有罪業與福報，也沒有父母倫常，也沒有世間的禮法規範，更沒有善惡之分。如此一來，善與惡就成了同一回事，是與非也就混同一貫，一切事物都成了虛無烏有，就像夢中所見的景象一樣不真實。如果說「一切法真實地什麼都沒有」，會導致這麼多的過失，這樣的說法還有誰會相信呢？</td><td class="bh15p12-guan"><b>惡取空的倫理與現實雙重破產</b>——本段是全品的核心批判所在：若把「空」誤解為「一切皆無」的虛無主義（惡取空），將導致倫理、因果、世間禮法全面失效，善惡是非混淆不清；這正是中觀反覆強調「空」不是「什麼都沒有」，而是「無自性」的根本原因——惡取空與正見的空性有著天壤之別。</td></tr><tr><td class="bh15p12-src">若言顛倒故見有者，當見一人時，何以不見二、三？以其實無而顛倒見故。</td><td>（惡取空者又主張：）如果說是因為顛倒妄想才會看見「有」，那麼當我們看見一個人的時候，為什麼不會（因為同樣的顛倒）看見兩個、三個人呢？（他們認為：）正是因為對方其實根本不存在，只是顛倒妄見所致（才會沒有固定數量）。</td><td class="bh15p12-guan"><b>對手詰難：以顛倒見說有者之矛盾</b>——這是惡取空論者提出的詰難，企圖以「顛倒見所見數量應該不固定」這一點，來質疑「緣起假有」的立場站不住腳。這一詰難其實混淆了「緣起假有（因緣安立、數量確定）」與「純粹妄想幻覺（無因緣依據、數量不定）」的根本差異，為下段的回應埋下伏筆。</td></tr><tr><td class="bh15p12-src">若不墮此有、無見，得中道實相。</td><td>如果不落入「有見」與「無見」這兩種極端的執著，就能證得中道實相。</td><td class="bh15p12-guan"><b>離二邊即是中道</b>——這是全品的樞紐句：中觀之道，既不同於執「有」自性的常見，也不同於執「無」一切的斷滅見（惡取空），而是超越這兩種極端對立、如實觀照緣起的中道實相——這正是本品破斥「有見」「無見」二邊之後所要導向的正見。</td></tr><tr><td class="bh15p12-src">云何知實？</td><td>那麼，要如何才能知道這個「實相」呢？</td><td class="bh15p12-guan"><b>從理論轉向修證的關鍵一問</b>——本句以簡短的設問承上啟下，將論述的重心從邏輯辨析轉向「如何親證中道實相」的問題，引出下文對信心、信力的強調，說明中道實相不僅是理論的結論，更需要透過信解與修證來成就。</td></tr><tr><td class="bh15p12-src">如過去恒河沙等諸佛菩薩所知所說，未來恒河沙等諸佛菩薩所知所說，現在恒河沙等諸佛菩薩所知所說。</td><td>（要這樣理解實相：）就如同過去像恒河沙數那樣多的諸佛菩薩所共同了知、共同宣說的（中道實相）；未來恒河沙數的諸佛菩薩所共同了知、共同宣說的（中道實相）；以及現在恒河沙數的諸佛菩薩所共同了知、共同宣說的（中道實相），三世諸佛菩薩所證所說皆無二致。</td><td class="bh15p12-guan"><b>以三世諸佛共證為實相之保證</b>——本段以「三世恒河沙諸佛菩薩所知所說皆同」來確立中道實相的普遍性與真實性：中道並非一家之言、一時之見，而是超越時間、為一切覺悟者所共同證知宣說的究竟真理，藉此建立信心的堅實根基。</td></tr><tr><td class="bh15p12-src">信心大故，不疑、不悔；信力大故，能持、能受；是名法忍。</td><td>因為對此（三世諸佛共證的中道實相）有廣大的信心，所以不生疑惑、不生悔意；因為信心的力量廣大，所以能夠受持、能夠承受（這個深奧的教法）。這就稱為「法忍」。</td><td class="bh15p12-guan"><b>信心信力成就法忍·全品總結</b>——本品以「信心」與「信力」作為終極收束：中道實相雖甚深難測，但透過對三世諸佛共證真理的堅定信心，行者便能不疑不悔地受持、承擔——這種對甚深空義不動搖、不退轉的信解，正是「法忍」的具體內涵，也呼應了整個「羼提波羅蜜·法忍」主題的核心精神。</td></tr></tbody></table><p class="bh15p12-note">大智度論卷十五第12品「破惡取空」原文·白話·中觀三欄對照。全品先辨「常無」與「斷滅無」二型，繼以歸謬法揭示斷滅見導致因果錯亂、業果體系全面崩解、三寶盡毀等過失，再正面批判「惡取空」（誤解空為虛無）將摧毀倫理與世間禮法，經對手以顛倒見詰難後，導出「離有無二邊即是中道」的樞紐句，終以三世諸佛共證中道實相、信心信力成就法忍作全品總結。　中觀關鍵詞：常無與斷滅無　惡取空之過失　離二邊即中道　信心信力成法忍</p></div></div>
+<script id="wy-bh15p12-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p12Btn"),BOX=document.getElementById("bh15p12Box"),MODAL=document.getElementById("bh15p12Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=11;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p12Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p12Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P12:END-->
 </body>
 </html>
