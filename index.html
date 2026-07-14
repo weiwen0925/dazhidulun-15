@@ -2213,5 +2213,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P4:END-->
+<!--WY-BH15P5:BEGIN-->
+<style id="wy-bh15p5-css">
+.bh15p5-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p5-fabbox.show{display:block;}
+.bh15p5-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p5-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p5-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p5-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p5-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p5-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p5-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p5-modal.open{display:flex;}
+.bh15p5-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p5-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p5-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p5-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p5-close:hover{background:#dde2e6;}
+.bh15p5-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p5-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p5-tbl th,.bh15p5-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p5-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p5-tbl thead th:nth-child(1){width:32%;}.bh15p5-tbl thead th:nth-child(2){width:41%;}.bh15p5-tbl thead th:nth-child(3){width:27%;}
+.bh15p5-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p5-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p5-guan{background:#eef2f5;color:#37505f;}
+.bh15p5-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p5-tbl tbody tr:nth-child(even) td.bh15p5-guan{background:#e8eef2;}
+.bh15p5-tbl tbody tr:nth-child(even) td.bh15p5-qa{background:#e7ecdb;}
+.bh15p5-tbl b{color:#8b2500;}
+.bh15p5-guan b{color:#2f6b5a;}
+.bh15p5-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p5-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p5-fabbox{right:14px;}.bh15p5-tbl{font-size:11px;}.bh15p5-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p5-fabbox" id="bh15p5Box"><button class="bh15p5-btn" id="bh15p5Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p5-ic">譯</span><span class="bh15p5-ls"><span class="bh15p5-l1">本品 · 原文·白話·中觀</span><span class="bh15p5-l2">白話翻譯表</span></span></button></div><div class="bh15p5-modal" id="bh15p5Modal" role="dialog" aria-modal="true"><div class="bh15p5-card"><button class="bh15p5-close" id="bh15p5Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第5品 白話翻譯表（二門三門法忍）</h3><p class="sub">大智度論卷十五·二門三門法忍 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p5-tbl"><caption>二門三門法忍 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p5-src">復次，菩薩觀一切為二。何等二？二名內、外相。內、外相故，內非外相，外非內相。</td><td>再者，菩薩觀照一切法為『二』。是哪兩種呢？這『二』指的是內相與外相。因為有內、外相狀的分別，所以內相並非外相，外相也並非內相。</td><td class="bh15p5-guan"><b>破一啟二·內外相待的第一組二門</b>——延續前品「觀一相」的論證，此段立即翻轉方向，指出「一」若被誤認為實有自性的終極本體，便會落入常見之弊，故須進一步以「內外相待」破除對「一」的殘留執著，開展「二門觀」的第一組範疇。</td></tr><tr><td class="bh15p5-src">復次，一切法有、無相故為二。空、不空，常、非常，我、非我，色、非色，可見、不可見，有對、非有對，有漏、無漏，有為、無為，心法、非心法，心數法、非心數法，心相應法、非心相應法。</td><td>再者，一切法因為有『有相』與『無相』的分別，所以成為『二』。（依此類推）空與不空、常與非常、我與非我、色與非色、可見與不可見、有對與非有對、有漏與無漏、有為與無為、心法與非心法、心數法與非心數法、心相應法與非心相應法，都是如此相對而立的範疇。</td><td class="bh15p5-guan"><b>十一組相待範疇·世俗諦的分類施設</b>——此段一口氣列舉十一組彼此相待而立的二元範疇，展示「二」並非實有自性的兩個獨立本體，而是透過彼此對待、相互定義才能成立的世俗施設，呼應中觀「相待假」之理——任何一方若離開對方，便無法獨立安立自身之相。</td></tr><tr><td class="bh15p5-src">如是無量二門，破一不著二，是名為法忍。</td><td>像這樣透過無量無數的『二門』觀照，既破除了對『一』的執著，又不進一步執著於『二』這個概念本身，這就稱為『法忍』。</td><td class="bh15p5-guan"><b>破一不著二·二門觀的總收</b>——此句是「二門觀」一節的總結：以「二」為藥，治「執一」之病，病癒後連「二」這味藥也不再執取，正是「不在此岸不在彼岸」中道彈性的具體展現。</td></tr><tr><td class="bh15p5-src">復次，菩薩或觀一切法為三。何等為三？下、中、上，善、不善、無記，有、無、非有非無，見諦斷、思惟斷、無斷，學、無學、非學非無學，報、有報、非報非有報。</td><td>再者，菩薩有時也觀照一切法為『三』。是哪三種呢？（例如）下、中、上；善、不善、無記；有、無、非有非無；見諦所斷、思惟所斷、無所斷；有學、無學、非學非無學；有報、非報、非報非有報等種種三分的範疇。</td><td class="bh15p5-guan"><b>三門觀·多元光譜的差別智施設</b>——由「二門」再進一步展開為「三門」，建立更精細的階梯化、光譜化分類（如根器的下中上、道德的善惡無記、修證的見道修道無學等），這是菩薩「差別智」的展現——尊重世俗諦中眾生根器與修證階位的多樣性，以利對機施教、分類度眾。</td></tr><tr><td class="bh15p5-src">如是無量三門，破一不著異，是名為法忍。</td><td>像這樣透過無量無數的『三門』觀照，既破除了對『一』的執著，又不執著於種種差異之相，這就稱為『法忍』。</td><td class="bh15p5-guan"><b>破一不著異·三門觀的總收與中論八不映射</b>——本句與前段「破一不著二」對舉合觀，「二門」「三門」看似建立差異、增加分別，實則皆是為了破除對「一」的執著而暫設的世俗諦工具，最終仍須「不著異」——不落入分別相的執取，二者共同映現《中論》「不一不異」的中道實踐：觀不一（破自性一）、觀相待而有（二三亦無自性）、觀世俗施設（分類度眾）、觀二諦圓融（心無所住）。</td></tr></tbody></table><p class="bh15p5-note">大智度論卷十五第5品「二門三門法忍」原文·白話·中觀三欄對照。承接前品「觀一相」，本品翻轉方向——先以十一組相待範疇「觀二」破除對「一」的殘留執著，再以六組三分範疇「觀三」建立階梯化世俗施設，終以「破一不著二」「破一不著異」二句分別總收二門、三門，映現《中論》不一不異之中道。　中觀關鍵詞：內外相待　十一組相待範疇　破一不著二　三門差別智　破一不著異</p></div></div>
+<script id="wy-bh15p5-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p5Btn"),BOX=document.getElementById("bh15p5Box"),MODAL=document.getElementById("bh15p5Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=4;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p5Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p5Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P5:END-->
 </body>
 </html>
