@@ -2315,5 +2315,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P6:END-->
+<!--WY-BH15P7:BEGIN-->
+<style id="wy-bh15p7-css">
+.bh15p7-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p7-fabbox.show{display:block;}
+.bh15p7-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p7-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p7-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p7-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p7-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p7-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p7-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p7-modal.open{display:flex;}
+.bh15p7-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p7-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p7-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p7-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p7-close:hover{background:#dde2e6;}
+.bh15p7-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p7-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p7-tbl th,.bh15p7-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p7-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p7-tbl thead th:nth-child(1){width:32%;}.bh15p7-tbl thead th:nth-child(2){width:41%;}.bh15p7-tbl thead th:nth-child(3){width:27%;}
+.bh15p7-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p7-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p7-guan{background:#eef2f5;color:#37505f;}
+.bh15p7-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p7-tbl tbody tr:nth-child(even) td.bh15p7-guan{background:#e8eef2;}
+.bh15p7-tbl tbody tr:nth-child(even) td.bh15p7-qa{background:#e7ecdb;}
+.bh15p7-tbl b{color:#8b2500;}
+.bh15p7-guan b{color:#2f6b5a;}
+.bh15p7-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p7-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p7-fabbox{right:14px;}.bh15p7-tbl{font-size:11px;}.bh15p7-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p7-fabbox" id="bh15p7Box"><button class="bh15p7-btn" id="bh15p7Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p7-ic">譯</span><span class="bh15p7-ls"><span class="bh15p7-l1">本品 · 原文·白話·中觀</span><span class="bh15p7-l2">白話翻譯表</span></span></button></div><div class="bh15p7-modal" id="bh15p7Modal" role="dialog" aria-modal="true"><div class="bh15p7-card"><button class="bh15p7-close" id="bh15p7Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第7品 白話翻譯表（釋法忍品·十四難毒箭喻）</h3><p class="sub">大智度論卷十五·釋法忍品·十四難毒箭喻 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p7-tbl"><caption>毒箭喻·提問即已錯置 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p7-src">如一比丘於此十四難思惟觀察，不能通達，心不能忍；持衣鉢至佛所，白佛言：「佛能為我解此十四難，使我意了者，當作弟子；若不能解，我當更求餘道！」</td><td>有一位比丘反覆思惟這十四個難題，卻始終無法通達，心裡無法安忍；於是帶著衣鉢來到佛陀跟前，稟白佛陀說：「如果佛陀能為我解開這十四個難題，讓我心裡明白，我就作您的弟子；如果不能解答，我就要另尋別的修行道路！」</td><td class="bh15p7-guan"><b>心結而非知識難題</b>——比丘將修道的意願綁在「答案是否到手」上，反映的正是凡夫典型的自性見：以為只要獲得一個確定不移的命題，心便能安住。中觀恰恰要拆穿：真正的不安不在十四難本身，而在對「必須有個答案」這一預設的執取。</td></tr><tr><td class="bh15p7-src">佛告：「癡人！汝本共我要誓『若答十四難，汝作我弟子』耶？」比丘言：「不也！」佛言：「汝癡人今何以言『若不答我，不作弟子』？我為老、病、死人說法濟度；此十四難是鬪諍法，於法無益，但是戲論，何用問為？若為汝答，汝心不了，至死不解，不能得脫生、老、病、死。</td><td>佛陀說：「愚癡的人啊！你當初和我立過誓約，說『如果你回答了十四難，我才作你的弟子』嗎？」比丘回答：「沒有！」佛陀說：「你這愚癡的人，如今為何說『如果不回答我，我就不作弟子』？我說法度化眾生，是為了老、病、死之苦的人；這十四個難題只是彼此爭辯的話柄，對修行毫無益處，只是戲論罷了，何必追問？就算我為你解答，你的心仍然不能明白，至死也不能真正理解，仍舊無法脫離生、老、病、死。</td><td class="bh15p7-guan"><b>偽契約的揭穿</b>——佛陀一針見血指出比丘擅自替師徒關係加上一條「單方追加條款」，藉此點破：出家求道的真實契約從來是「斷苦」而非「辯贏形上學」。「鬪諍法、於法無益、但是戲論」三重判詞，正是中觀對一切形上學命題的基本診斷。</td></tr><tr><td class="bh15p7-src">譬如有人身被毒箭，親屬呼醫，欲為出箭塗藥，便言：『未可出箭，我先當知汝姓字、親里，父、母年歲；次欲知箭出在何山，何木、何羽，作箭鏃者為是何人，是何等鐵；復欲知弓何山木，何蟲角；復欲知藥是何處生，是何種名。如是等事，盡了了知之，然後聽汝出箭塗藥。』佛問比丘：「此人可得知此眾事，然後出箭不？」比丘言：「不可得知！若待盡知，此則已死。」</td><td>譬如有人身中毒箭，親屬呼喚醫生前來，正要為他拔箭敷藥，這人卻說：『先別急著拔箭，我得先知道射箭的人姓什麼、家住哪裡、父母多大年紀；還要知道做箭的木材出自哪座山、什麼樹、什麼羽毛，造箭鏃的人是誰、用的是什麼鐵；還要知道弓是用哪座山的木頭、哪種獸角做的；還要知道藥出自何處、叫什麼名字。這些事情全都弄清楚了，才准你們替我拔箭敷藥。』佛陀問比丘：「這個人能等到把這些事情全部弄清楚，再拔箭嗎？」比丘回答：「不可能弄清楚！如果要等全都弄清楚，這人早就死了！」</td><td class="bh15p7-guan"><b>急迫性壓倒思辨欲</b>——毒箭喻的力量在於揭露一個時間結構上的悖論：形上學追問需要無限的資訊與時間，而生死之苦卻不容片刻等待。這正是「拔苦優先於窮理」的實踐急務，也是中觀後續「戲論寂滅」教說在實踐面的最初雛形。</td></tr><tr><td class="bh15p7-src">佛言：「汝亦如是！為邪見箭愛毒塗，已入汝心，欲拔此箭，作我弟子；而不欲出箭，方欲求盡世間常、無常，邊、無邊等，求之未得，則失慧命，與畜生同死，自投黑闇！」比丘慚愧，深識佛語，即得阿羅漢道。</td><td>佛陀說：「你也是這樣！你被塗上愛欲之毒的邪見之箭射中，箭毒已經侵入你的心，你想拔除這支箭來作我的弟子；卻不想拔箭療毒，反而一心想先窮究世間是常還是無常、有邊還是無邊等等問題，等你還沒求得答案，慧命早已喪失，就像畜生一樣糊裡糊塗地死去，自己把自己投入黑暗之中！」比丘聽了深感慚愧，徹底領悟佛陀的話，當下就證得了阿羅漢道。</td><td class="bh15p7-guan"><b>價值排序的顛倒</b>——凡夫把「窮盡知識」置於「息滅苦毒」之前，正是慧命喪失的根源；「自投黑闇」一語，點明形上學執著的終局不是開悟而是沉淪。比丘的當下證果，說明真正的解脫關鍵不在十四難的答案，而在放下對答案的執取本身。</td></tr><tr><td class="bh15p7-src">復次，菩薩欲作一切智人，應推求一切法，知其實相；於十四難中不滯、不礙，知其是心重病，能出、能忍，是名法忍。</td><td>再者，菩薩想要成就一切智者的果位，就應當推究一切法，了知諸法的真實相貌；對於十四個難題，心中不滯留、不障礙，明白這正是心中的重病所在，能夠出離它、能夠安忍於它，這就稱為「法忍」。</td><td class="bh15p7-guan"><b>不答而超越——菩薩式的法忍</b>——聲聞乘的解法是「捨置不答」，菩薩乘的解法則是「推求一切法皆無自性」而後「不滯不礙」——不是不知道要怎麼答，而是照見提問本身缺乏一個穩固的自性根基可答；能入十四難之病理而不被病理捲入，正是法忍的完整定義。</td></tr></tbody></table><p class="bh15p7-note">大智度論卷十五第7品「釋法忍品·十四難毒箭喻」原文·白話·中觀三欄對照。全段以一比丘因十四難不得解而欲求餘道為引，佛陀先揭穿其偽契約、再以毒箭喻點明拔苦優先於窮理，比丘證果後，論主歸結「推求一切法、於十四難不滯不礙」即是法忍。　中觀關鍵詞：偽契約揭穿　毒箭喻　價值排序顛倒　推求一切法無自性　不滯不礙</p></div></div>
+<script id="wy-bh15p7-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p7Btn"),BOX=document.getElementById("bh15p7Box"),MODAL=document.getElementById("bh15p7Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=6;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p7Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p7Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P7:END-->
 </body>
 </html>
