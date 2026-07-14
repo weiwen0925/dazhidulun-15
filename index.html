@@ -2672,5 +2672,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P13:END-->
+<!--WY-BH15P14:BEGIN-->
+<style id="wy-bh15p14-css">
+.bh15p14-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p14-fabbox.show{display:block;}
+.bh15p14-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p14-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p14-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p14-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p14-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p14-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p14-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p14-modal.open{display:flex;}
+.bh15p14-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p14-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p14-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p14-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p14-close:hover{background:#dde2e6;}
+.bh15p14-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p14-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p14-tbl th,.bh15p14-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p14-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p14-tbl thead th:nth-child(1){width:32%;}.bh15p14-tbl thead th:nth-child(2){width:41%;}.bh15p14-tbl thead th:nth-child(3){width:27%;}
+.bh15p14-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p14-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p14-guan{background:#eef2f5;color:#37505f;}
+.bh15p14-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p14-tbl tbody tr:nth-child(even) td.bh15p14-guan{background:#e8eef2;}
+.bh15p14-tbl tbody tr:nth-child(even) td.bh15p14-qa{background:#e7ecdb;}
+.bh15p14-tbl b{color:#8b2500;}
+.bh15p14-guan b{color:#2f6b5a;}
+.bh15p14-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p14-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p14-fabbox{right:14px;}.bh15p14-tbl{font-size:11px;}.bh15p14-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p14-fabbox" id="bh15p14Box"><button class="bh15p14-btn" id="bh15p14Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p14-ic">譯</span><span class="bh15p14-ls"><span class="bh15p14-l1">本品 · 原文·白話·中觀</span><span class="bh15p14-l2">白話翻譯表</span></span></button></div><div class="bh15p14-modal" id="bh15p14Modal" role="dialog" aria-modal="true"><div class="bh15p14-card"><button class="bh15p14-close" id="bh15p14Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第14品 白話翻譯表（釋毘梨耶波羅蜜義）</h3><p class="sub">大智度論卷十五·釋毘梨耶波羅蜜義 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p14-tbl"><caption>釋毘梨耶波羅蜜義 · 原文｜白話翻譯｜中觀概念（共11段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p14-src">身心精進不懈息故，應具足毘梨耶波羅蜜。</td><td>因為身與心精勤努力、不懈怠止息的緣故，應當具足毘梨耶波羅蜜（精進波羅蜜）。</td><td class="bh15p14-guan"><b>經文標舉·身心俱進為精進體性</b>——本品所釋經文極為簡短，卻精準點出「精進」的體性同時涵蓋身、心兩個層面——身不懈怠於外在行持，心不懈怠於內在觀照，二者缺一不可，這是後續全品論述的根本依據。</td></tr><tr><td class="bh15p14-src">毘梨耶（秦言精進）。</td><td>「毘梨耶」，用秦地的語言來說，就是「精進」的意思。</td><td class="bh15p14-guan"><b>音譯與義譯的對應</b>——這是論主對梵語術語的簡短音義對照，看似瑣碎，實則是《大智度論》一貫的翻譯體例，確保讀者不因語言隔閡而誤解六波羅蜜之一的「毘梨耶」即漢譯常見的「精進」概念。</td></tr><tr><td class="bh15p14-qa">問曰：如精進是一切善法本，應最在初，今何以故第四？</td><td>問：既然精進是一切善法的根本，理應排在六波羅蜜的最前面，為什麼現在卻排在第四位呢？</td><td class="bh15p14-guan"><b>排序詰問·次第背後的義理</b>——這一問看似只是形式上的次序問題，實則觸及六波羅蜜次第安立的深層邏輯：修行次第並非任意排列，而是對應著從世間福德到出世智慧層層遞進的結構，這正是本品要層層剖析的核心。</td></tr><tr><td class="bh15p14-qa">答曰：布施、持戒、忍辱，世間常有。如客主之義，法應供給，乃至畜生亦知布施；或有人種種因緣故能布施，若為今世、若為後世、若為道故布施，不須精進。</td><td>答：布施、持戒、忍辱這三種德行，在世間本來就普遍存在。就像賓主之間的禮節道義一樣，依理本就應當供給施予，甚至連畜生都懂得布施；也有人因為種種不同的因緣而能夠布施，或是為了今生、或是為了來世、或是為了求道而布施，這些都不一定需要依靠精進的力量。</td><td class="bh15p14-guan"><b>福德門三度·世間本具不待精進</b>——論主先破除「精進應居首位」的直覺假設，指出布施、持戒、忍辱三者本屬世間常法，其生起的因緣本就多元，不必然仰賴精進的推動，為下文區分「福德門」與「智慧門」預作鋪墊。</td></tr><tr><td class="bh15p14-src">如持戒者，見為惡之人，王法治罪，便自畏懼，不敢為非；或有性善，不作諸惡；有人聞今世作惡，後世受罪，而以怖畏，故能持戒；有人聞持戒因緣故，得離生、老、病、死，是中心生、口言：「我從今日，不復殺生。」如是等即是戒，豈須精進波羅蜜而能行耶？</td><td>就像持戒的人，看見作惡的人被國家法律治罪，便自然心生畏懼，不敢做壞事；也有些人生性善良，本來就不造作種種惡業；也有人聽聞今生作惡、來世要受罪報，因為心懷怖畏，所以能夠持戒；也有人聽聞持戒的因緣能夠使人脫離生、老、病、死，於是心中生起、口中說出：「我從今日起，不再殺生。」像這樣種種情況就是持戒，難道還需要靠精進波羅蜜才能奉行嗎？</td><td class="bh15p14-guan"><b>持戒之多元動因·同樣不待精進</b>——延續上段論述邏輯，本段細數持戒得以成立的四種常見動因（畏刑、性善、畏罪、慕道），說明持戒同樣可以在缺乏「精進」推動的情況下自然生起，進一步鞏固「前三度屬世間常法」這一論點。</td></tr><tr><td class="bh15p14-src">如忍辱中，若罵、若打、若殺，或畏故不報，或少力、或畏罪、或修善人法、或為求道故，默然不報，皆不必須精進波羅蜜乃能忍也。</td><td>就像忍辱之中，無論是被辱罵、被毆打、乃至被殺害，有人是因為畏懼而不回報、有人是因為力量弱小、有人是因為畏懼罪報、有人是修習善人之法、也有人是為了求道的緣故，而默然不加以回報，這些都不一定需要依靠精進波羅蜜才能夠安忍。</td><td class="bh15p14-guan"><b>忍辱之多元動因·三度並列世間性</b>——至此，論主已完整說明布施、持戒、忍辱三度皆各有其世間性的自然生起條件，無須精進強力推動；這一鋪陳的目的，正是要凸顯「精進」與前三度性質上的根本差異，為第四節「二門分判」的轉折蓄勢。</td></tr><tr><td class="bh15p14-src">今欲得知諸法實相，行般若波羅蜜故，修行禪定；禪定是實智慧之門，是中應懃修精進，一心行禪。</td><td>但如今若想要了知諸法的實相，為了修行般若波羅蜜的緣故，就必須修行禪定；禪定是通往真實智慧的門徑，在這當中就應當勤奮修習精進，一心一意地行持禪定。</td><td class="bh15p14-guan"><b>轉折關鍵：禪慧二度必待精進</b>——本段是全品的轉折樞紐：前三度可以不待精進而自然生起，但欲通往「諸法實相」的般若智慧，必須經由禪定之門，而禪定的成就恰恰離不開精進的懃修——這正是精進在六波羅蜜體系中不可替代之處。</td></tr><tr><td class="bh15p14-src">復次，布施、持戒、忍辱，是大福德，安隱快樂，有好名譽，所欲者得；既得知此福利之味，今欲增進，更得妙勝禪定、智慧。譬如穿井已見濕泥，轉加增進必望得水；又如鑽火，已得見煙，倍復力勵，必望得火。</td><td>再者，布施、持戒、忍辱這三種德行，能夠成就廣大的福德，帶來安穩快樂、獲得美好的名譽，所希求的也都能得到；既然已經嚐到這些福德利益的滋味，如今想要更進一步，去獲得更為殊勝美妙的禪定與智慧。這就好比挖井已經見到濕潤的泥土，便會更加努力，希望能挖出水來；又好比鑽木取火，已經看見了煙，便會加倍用力，希望能夠得到火。</td><td class="bh15p14-guan"><b>穿井鑽木二喻·福德為進道之階</b>——論主以兩個生動的日常譬喻，說明福德的作用：它不是目的地，而是一個「已見徵兆、值得加倍努力」的中繼點。這鼓勵行者不因已有小成就而止步，反而應憑藉精進更上層樓。</td></tr><tr><td class="bh15p14-src">欲成佛道，凡有二門：一者、福德，二者、智慧。行施、戒、忍是為福德門；知一切諸法實相，摩訶般若波羅蜜，是為智慧門。菩薩入福德門，除一切罪，所願皆得；若不得願者，以罪垢遮故。入智慧門，則不厭生死、不樂涅槃，二事一故。今欲出生摩訶般若波羅蜜，般若波羅蜜要因禪定門，禪定門必須大精進力。何以故？散亂心不能得見諸法實相。譬如風中然燈，不能照物；燈在密屋，明必能照。</td><td>想要成就佛道，總共有兩個門徑：第一是福德門，第二是智慧門。修行布施、持戒、忍辱，這是福德門；了知一切諸法的實相，也就是摩訶般若波羅蜜，這是智慧門。菩薩進入福德門，能夠消除一切罪業，所希求的願望都能實現；如果願望沒有實現，那是因為罪業垢染遮蔽的緣故。進入智慧門，就能夠不厭離生死，也不貪樂涅槃，因為生死與涅槃這兩件事在實相上本是一體的。如今想要出生摩訶般若波羅蜜，般若波羅蜜必須依靠禪定這個門徑，而禪定這個門徑則必須依靠強大的精進力量。為什麼呢？因為散亂的心無法得見諸法的實相。這就好比在風中點燃的燈，無法照亮東西；但如果把燈放在密閉的屋子裡，光明必定能夠照物。</td><td class="bh15p14-guan"><b>福德門與智慧門·二門並立而精進獨屬慧門</b>——這是全品的核心架構：福德門除罪滿願，屬有為對治；智慧門了達實相、生死涅槃不二，屬究竟解脫。而精進不直接屬於任一門，卻是連接禪定、通向智慧門的必要動能。「風中然燈」之喻尤為精妙：散亂心如風中之燈不能照物，唯有透過精進攝心入定，方能朗照諸法實相，這正是中觀「以定資慧」的具體寫照。</td></tr><tr><td class="bh15p14-src">是禪定、智慧，不可以福願求，亦非麁觀能得，要須身、心精懃，急著不懈，爾乃成辦。如佛所說：血、肉、脂、髓皆使竭盡，但令皮、骨、筋在，不捨精進。如是乃能得禪定、智慧，得是二事，則眾事皆辦。</td><td>這禪定與智慧，並不是單靠福德與願望就能求得，也不是憑藉粗淺的觀想就能獲得，必須要身與心都精勤懇切、緊緊把握、不懈怠，這樣才能夠成就。就如同佛陀所說：即使血、肉、脂肪、骨髓都耗竭殆盡，只要還留著皮、骨、筋，也絕不捨棄精進。像這樣才能夠獲得禪定與智慧，一旦得到這兩件事，那麼一切修行之事都能夠成辦。</td><td class="bh15p14-guan"><b>皮骨不捨·精進之極致心法</b>——本段以佛陀「血肉脂髓竭盡、皮骨筋在、不捨精進」的驚心譬喻，將精進的強度推至修行心法的極致：這不是誇飾的苦行崇拜，而是強調對禪定智慧的追求容不下絲毫懈怠僥倖之心；唯有這種不可替代的精勤，才能真正打開通往實相智慧的門戶。</td></tr><tr><td class="bh15p14-src">以是故，精進第四，名為禪定、實智慧之根。上三中雖有精進，少故不說。</td><td>因為這個緣故，精進波羅蜜排在第四位，被稱為禪定與真實智慧的根本。雖然在前三度之中也含有精進的成分，但因為分量較少，所以沒有特別提出來說。</td><td class="bh15p14-guan"><b>全品總結·精進為禪慧之根</b>——本段以簡潔的結語回應開篇「精進何以第四」的詰問：精進之所以排在第四，並非因為它不重要，而是因為它是禪定與智慧這兩種出世法門得以成立的根本動能；前三度雖非全無精進，但份量輕微，不足以彰顯其樞紐地位，故置於此處特別標舉。</td></tr></tbody></table><p class="bh15p14-note">大智度論卷十五第14品「釋毘梨耶波羅蜜義」原文·白話·中觀三欄對照。全品由「精進何以居第四」之詰問破題，論主先明布施持戒忍辱三度世間本具、不待精進，再以穿井鑽木二喻與福德門智慧門二門分判，點出精進為連接禪定、通向智慧門之必要動能，終以佛所說「皮骨不捨、不捨精進」收束為精進之極致心法，總結精進為禪定實智慧之根。　中觀關鍵詞：福德門與智慧門　精進為禪慧之根　風中然燈之喻　皮骨不捨</p></div></div>
+<script id="wy-bh15p14-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p14Btn"),BOX=document.getElementById("bh15p14Box"),MODAL=document.getElementById("bh15p14Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=13;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p14Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p14Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P14:END-->
 </body>
 </html>
