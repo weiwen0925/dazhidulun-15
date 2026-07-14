@@ -2162,5 +2162,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P3:END-->
+<!--WY-BH15P4:BEGIN-->
+<style id="wy-bh15p4-css">
+.bh15p4-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p4-fabbox.show{display:block;}
+.bh15p4-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p4-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p4-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p4-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p4-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p4-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p4-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p4-modal.open{display:flex;}
+.bh15p4-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p4-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p4-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p4-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p4-close:hover{background:#dde2e6;}
+.bh15p4-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p4-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p4-tbl th,.bh15p4-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p4-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p4-tbl thead th:nth-child(1){width:32%;}.bh15p4-tbl thead th:nth-child(2){width:41%;}.bh15p4-tbl thead th:nth-child(3){width:27%;}
+.bh15p4-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p4-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p4-guan{background:#eef2f5;color:#37505f;}
+.bh15p4-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p4-tbl tbody tr:nth-child(even) td.bh15p4-guan{background:#e8eef2;}
+.bh15p4-tbl tbody tr:nth-child(even) td.bh15p4-qa{background:#e7ecdb;}
+.bh15p4-tbl b{color:#8b2500;}
+.bh15p4-guan b{color:#2f6b5a;}
+.bh15p4-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p4-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p4-fabbox{right:14px;}.bh15p4-tbl{font-size:11px;}.bh15p4-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p4-fabbox" id="bh15p4Box"><button class="bh15p4-btn" id="bh15p4Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p4-ic">譯</span><span class="bh15p4-ls"><span class="bh15p4-l1">本品 · 原文·白話·中觀</span><span class="bh15p4-l2">白話翻譯表</span></span></button></div><div class="bh15p4-modal" id="bh15p4Modal" role="dialog" aria-modal="true"><div class="bh15p4-card"><button class="bh15p4-close" id="bh15p4Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第4品 白話翻譯表（一相無二）</h3><p class="sub">大智度論卷十五·一相無二 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p4-tbl"><caption>一相無二 · 原文｜白話翻譯｜中觀概念（共5段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p4-src">復次，菩薩於一切法，知一相無二。一切法可識相，故言一。眼識識色，乃至意識識法，是可識相法，故言一。</td><td>再者，菩薩對於一切法，都能了知其只是「一相」而沒有第二個相狀。一切法都具有『可以被識知的相狀』，所以說它們是『一』。眼識能識別色境，乃至意識能識別法境，這些都是『可被識知之相』的法，所以說是『一』。</td><td class="bh15p4-guan"><b>可識相·認識論第一維度</b>——本品開篇即從「認識論」切入，指出一切法無論表面如何千差萬別，皆共享「可被六識識別」這一共同相狀，此即「一相」的第一層論證基礎，為下文「三稜鏡」式（認識論／數量論／存在論）的歸一論證揭開序幕。</td></tr><tr><td class="bh15p4-src">復次，一切法可知相，故言一。苦法智、苦比智，知苦諦；集法智、集比智，知集諦；滅法智、滅比智，知滅諦；道法智、道比智，知道諦。及善世智，亦知苦、集、滅、道、虛空、非智緣滅，是可知相法，故言一。</td><td>再者，一切法都具有『可以被了知的相狀』，所以說是『一』。苦法智與苦比智，能夠了知苦諦；集法智與集比智，能夠了知集諦；滅法智與滅比智，能夠了知滅諦；道法智與道比智，能夠了知道諦。再加上善世智，也能夠了知苦、集、滅、道四諦，以及虛空、非智緣滅之理——這些都是『可被了知之相』的法，所以說是『一』。</td><td class="bh15p4-guan"><b>可知相·四諦十六智的統攝</b>——此段以四諦（苦集滅道）各具法智、比智共八智，加上世俗智，共同構成「可知」這一共相，說明無論所觀對象在義理上如何分殊（四諦、虛空、非智緣滅等），只要是「智慧所能了知的對象」，即共享同一種「可知相」，這是「一相」論證的第二層維度。</td></tr><tr><td class="bh15p4-src">復次，一切法可緣相，故言一。眼識及眼識相應法緣色；耳識、鼻識、舌識、身識亦如是；意識及意識相應法，亦緣眼、亦緣色、亦緣眼識，乃至緣意、緣法、緣意識。一切法可緣相，故言一。</td><td>再者，一切法都具有『可以被攀緣的相狀』，所以說是『一』。眼識以及與眼識相應的心所法，都攀緣色境；耳識、鼻識、舌識、身識也是同樣的道理；意識以及與意識相應的心所法，則既攀緣眼根、也攀緣色境、也攀緣眼識，乃至攀緣意根、攀緣法境、攀緣意識本身。一切法都具有『可被攀緣』的相狀，所以說是『一』。</td><td class="bh15p4-guan"><b>可緣相·六識攀緣的共相</b>——延續前兩段的認識論脈絡，此段再從「所緣」的角度指出，不論六根六識如何各自運作、彼此攀緣交涉，一切法作為「可被攀緣的對象」這一點是共通的，至此完成認識論三個層面（可識、可知、可緣）對「一相」的三重論證。</td></tr><tr><td class="bh15p4-src">復次，有人言：一切法各皆一，一復有一名為二，三一名為三，如是乃至千萬，皆是一而假名為千萬。</td><td>再者，有人這樣說：一切法各自都是『一』，一個『一』再加上一個『一』就稱為『二』，三個『一』就稱為『三』，像這樣乃至累積到千、萬，其實都只是『一』的累積，只是被假名安立為『千』、『萬』罷了。</td><td class="bh15p4-guan"><b>積一成多·數量論的解構</b>——此段轉入「數量論」維度，指出千萬等龐大數字，追根究柢不過是「一」的反覆累加，數量上的差異只是「假名施設」而非實有自性的差別，呼應中觀「假名」之說，為「萬法歸一」提供第四重（數量上的）論證。</td></tr><tr><td class="bh15p4-src">復次，一切法中有相，故言一；一相故，名為一。一切物名為法，法相故名為一。如是等無量一門，破異相，不著一，是名法忍。</td><td>再者，一切法之中都具有『存在』這一相狀，所以說是『一』；正因為只有這一個共通的相狀，所以稱之為『一』。凡是萬事萬物都可以被稱為『法』，正因為具有『法』這一相狀，所以稱之為『一』。像這樣透過種種無量的『一門』觀照，破除對種種差別相的執著，卻又不停留、不執著在『一』這個概念本身，這就稱為『法忍』。</td><td class="bh15p4-guan"><b>存在論歸一與破異不著總收</b>——此段以「有相」「法相」完成「一相」論證的第三個維度（存在論），並在段末以「破異相，不著一，是名法忍」總收全品綱領：「破異相」對治對差別相的執著，「不著一」則進一步掃除對治工具「一」本身的執著，二者合一才是完整的法忍，此即「藥病辯證」的核心——一如藥能治病，病癒亦不執藥。</td></tr></tbody></table><p class="bh15p4-note">大智度論卷十五第4品「一相無二」原文·白話·中觀三欄對照。龍樹菩薩從認識論（可識相·可知相·可緣相）、數量論（積一成多）、存在論（有相·法相）三個維度層層論證一切法「一相無二」，終以「破異相，不著一，是名法忍」總收——破異相對治差別見之病，不著一則掃蕩對治工具「一」本身的執著，二者合一方是完整法忍。　中觀關鍵詞：可識相可知相可緣相　積一成多的假名施設　破異相不著一　藥病辯證</p></div></div>
+<script id="wy-bh15p4-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p4Btn"),BOX=document.getElementById("bh15p4Box"),MODAL=document.getElementById("bh15p4Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=3;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p4Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p4Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P4:END-->
 </body>
 </html>
