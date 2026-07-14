@@ -2723,5 +2723,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P14:END-->
+<!--WY-BH15P15:BEGIN-->
+<style id="wy-bh15p15-css">
+.bh15p15-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p15-fabbox.show{display:block;}
+.bh15p15-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p15-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p15-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p15-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p15-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p15-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p15-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p15-modal.open{display:flex;}
+.bh15p15-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p15-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p15-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p15-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p15-close:hover{background:#dde2e6;}
+.bh15p15-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p15-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p15-tbl th,.bh15p15-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p15-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p15-tbl thead th:nth-child(1){width:32%;}.bh15p15-tbl thead th:nth-child(2){width:41%;}.bh15p15-tbl thead th:nth-child(3){width:27%;}
+.bh15p15-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p15-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p15-guan{background:#eef2f5;color:#37505f;}
+.bh15p15-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p15-tbl tbody tr:nth-child(even) td.bh15p15-guan{background:#e8eef2;}
+.bh15p15-tbl tbody tr:nth-child(even) td.bh15p15-qa{background:#e7ecdb;}
+.bh15p15-tbl b{color:#8b2500;}
+.bh15p15-guan b{color:#2f6b5a;}
+.bh15p15-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p15-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p15-fabbox{right:14px;}.bh15p15-tbl{font-size:11px;}.bh15p15-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p15-fabbox" id="bh15p15Box"><button class="bh15p15-btn" id="bh15p15Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p15-ic">譯</span><span class="bh15p15-ls"><span class="bh15p15-l1">本品 · 原文·白話·中觀</span><span class="bh15p15-l2">白話翻譯表</span></span></button></div><div class="bh15p15-modal" id="bh15p15Modal" role="dialog" aria-modal="true"><div class="bh15p15-card"><button class="bh15p15-close" id="bh15p15Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第15品 白話翻譯表（釋毘梨耶波羅蜜品·福慧雙軌）</h3><p class="sub">大智度論卷十五·福慧雙軌：福德與道業的本質分野 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p15-tbl"><caption>釋毘梨耶波羅蜜品·福慧雙軌 · 原文｜白話翻譯｜中觀概念（共6段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p15-qa">問曰：有人言：但行布施、持戒、忍辱故，得大福德；福德力故，所願皆得，禪定、智慧自然而至，復何用精進波羅蜜為？</td><td>問：有人說：只要修行布施、持戒、忍辱，就能得到廣大的福德；憑藉福德的力量，所希求的願望都能實現，禪定與智慧自然而然就會到來，那又何必要修習精進波羅蜜呢？</td><td class="bh15p15-guan"><b>提問登場·福德萬能論的邏輯前提</b>——這一問代表一種常見的修行迷思：把「福德」與「道業（禪定智慧）」畫上等號，誤以為前者的積累會自動兌換為後者。這正是全品要徹底破除的核心命題，也是龍樹展開精進波羅蜜必要性論證的起點。</td></tr><tr><td class="bh15p15-qa">答曰：佛道甚深難得，雖有布施、持戒、忍辱力，要須精進；精進力故，能生禪定；禪定生故，能得實智慧；實智慧力故，得無量佛法。</td><td>答：成就佛道是極為甚深、難以獲得的，即使已經具備布施、持戒、忍辱的力量，仍然必須依靠精進；因為有精進的力量，才能夠生起禪定；因為禪定生起，才能夠獲得真實的智慧；因為真實智慧的力量，才能夠獲得無量的佛法。</td><td class="bh15p15-guan"><b>因果鏈的重建·精進不可或缺</b>——龍樹並不否定施戒忍三度的價值，而是拆解提問者所假設的「單一因果直通車」，重新建立一條精確的因果鏈：精進→禪定→智慧→無量佛法。這條鏈中每一環都是「生」出下一環的必要條件，福德本身並不在這條鏈上。</td></tr><tr><td class="bh15p15-src">譬如耕田，雖有良田美種，不加功力，終不得實。施、戒、忍辱如好種，精進如耕種；若無精進，施戒忍辱皆不能立。</td><td>這就好比耕種田地，雖然擁有肥沃的田地與優良的種子，如果不施加耕作的功力，終究無法得到收成。布施、持戒、忍辱就好比優良的種子，精進就好比耕種的功夫；如果沒有精進，布施、持戒、忍辱都無法真正成立、發揮作用。</td><td class="bh15p15-guan"><b>耕田之喻·福德為種·精進為耕</b>——這個譬喻精確地重新定位了「福德」與「精進」的關係：福德（好種）是必要條件，但不是充分條件；沒有精進（耕種）這道工序的施加，再好的種子也只是潛能，無法轉化為現實的收成，這徹底瓦解了「福德自然而至」的迷思。</td></tr><tr><td class="bh15p15-src">如頂生王者，以布施力故，受梵天王福報；登忉利天，欲奪帝釋位，起貪欲心故，福盡墮落，不免惡道。是知福德力不能獨得道。</td><td>就像頂生王，因為布施的力量，感得梵天王的福報；登上忉利天，卻想要奪取帝釋天的王位，因為生起貪欲之心的緣故，福報耗盡而墮落，最終無法免於惡道。由此可知，僅憑福德的力量，是無法單獨成就道業的。</td><td class="bh15p15-guan"><b>頂生王的反例·福盡則墮</b>——這是全品最有力的例證之一：頂生王憑福德登上極高天位，卻因一念貪欲而福盡墮落惡道，鮮明證實「福德」是有為法，終將窮盡、無法保證解脫；再大的福報，若無智慧與精進為引導，終究是輪迴中的暫時安樂，並非究竟道業。</td></tr><tr><td class="bh15p15-src">復如羅頻珠比丘，福薄乞食不得、飯食化穢，而以大精進力故入甚深禪定，於臨命終日得阿羅漢果，入無餘涅槃。是知精進力能獨得道。</td><td>又像羅頻珠比丘，因為福報淺薄，乞食常常乞不到，即使得到食物也會變成污穢之物，但他憑藉著強大的精進力量，證入甚深的禪定，在臨命終的那一天證得阿羅漢果，進入無餘涅槃。由此可知，精進的力量足以單獨成就道業。</td><td class="bh15p15-guan"><b>羅頻珠比丘的正例·精進獨能得道</b>——與頂生王形成鮮明對比：羅頻珠比丘福德淺薄至極，卻僅憑精進之力便證得阿羅漢果、入無餘涅槃。一福盡墮落、一福薄得道，兩相對照徹底證成「精進」才是道業成就的關鍵動能，福德多寡並非決定性因素。</td></tr><tr><td class="bh15p15-src">以是故知，非但福德力故得道；欲成佛道，要須懃大精進。</td><td>因此可以知道，並不是僅僅憑藉福德的力量就能夠成就道業；想要成就佛道，必須要勤修廣大的精進。</td><td class="bh15p15-guan"><b>全品定論·非但要須</b>——這句「非但……要須……」的結語，是對開篇提問最直接、最有力的回應：徹底否定「福德萬能論」，確立精進為成佛道上不可替代、不可省略的動能，也呼應了全品「福慧雙軌」的核心架構——福德與道業終究是兩條不同的因果軌道，唯有精進能真正貫通二者。</td></tr></tbody></table><p class="bh15p15-note">大智度論卷十五第15品「釋毘梨耶波羅蜜品」原文·白話·中觀三欄對照。全品由「福德自然而至、何用精進」之提問破題，論主以耕田之喻拆解「福德自動轉化」的迷思，再舉頂生王福盡墮落、羅頻珠比丘福薄得道兩相對照的公案，終以「非但福德力故得道；欲成佛道，要須懃大精進」作全品定論，確立精進為福慧雙軌中不可替代的貫通動能。　中觀關鍵詞：福慧雙軌　耕田之喻　頂生王與羅頻珠對照　非但要須</p></div></div>
+<script id="wy-bh15p15-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p15Btn"),BOX=document.getElementById("bh15p15Box"),MODAL=document.getElementById("bh15p15Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=14;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p15Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p15Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P15:END-->
 </body>
 </html>
