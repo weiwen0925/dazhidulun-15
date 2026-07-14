@@ -2468,5 +2468,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P9:END-->
+<!--WY-BH15P10:BEGIN-->
+<style id="wy-bh15p10-css">
+.bh15p10-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p10-fabbox.show{display:block;}
+.bh15p10-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p10-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p10-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p10-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p10-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p10-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p10-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p10-modal.open{display:flex;}
+.bh15p10-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p10-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p10-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p10-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p10-close:hover{background:#dde2e6;}
+.bh15p10-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p10-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p10-tbl th,.bh15p10-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p10-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p10-tbl thead th:nth-child(1){width:32%;}.bh15p10-tbl thead th:nth-child(2){width:41%;}.bh15p10-tbl thead th:nth-child(3){width:27%;}
+.bh15p10-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p10-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p10-guan{background:#eef2f5;color:#37505f;}
+.bh15p10-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p10-tbl tbody tr:nth-child(even) td.bh15p10-guan{background:#e8eef2;}
+.bh15p10-tbl tbody tr:nth-child(even) td.bh15p10-qa{background:#e7ecdb;}
+.bh15p10-tbl b{color:#8b2500;}
+.bh15p10-guan b{color:#2f6b5a;}
+.bh15p10-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p10-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p10-fabbox{right:14px;}.bh15p10-tbl{font-size:11px;}.bh15p10-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p10-fabbox" id="bh15p10Box"><button class="bh15p10-btn" id="bh15p10Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p10-ic">譯</span><span class="bh15p10-ls"><span class="bh15p10-l1">本品 · 原文·白話·中觀</span><span class="bh15p10-l2">白話翻譯表</span></span></button></div><div class="bh15p10-modal" id="bh15p10Modal" role="dialog" aria-modal="true"><div class="bh15p10-card"><button class="bh15p10-close" id="bh15p10Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第10品 白話翻譯表（破有無二邊·四回合）</h3><p class="sub">大智度論卷十五·破有無二邊·四回合 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p10-tbl"><caption>破有無二邊·四回合 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p10-src">復次，有、無二邊，觀諸法生時、住時，則為有見相；觀諸法老時、壞時，則為無見相；三界眾生，多著此二見相。是二種法，虛誑不實。</td><td>再者，「有」與「無」是兩種極端的邊見：觀察諸法生起、安住的階段，便執取為「有見」之相；觀察諸法衰老、壞滅的階段，便執取為「無見」之相。三界眾生大多執著於這兩種見解。然而這兩種見解都是虛妄不實的。</td><td class="bh15p10-guan"><b>有無二邊皆緣生滅表相而立</b>——凡夫將諸法生滅過程中的某一階段（生住＝有、老壞＝無）截取出來，執以為實有或實無的自性判斷，卻不知生滅本身即是因緣和合的表相，並無獨立可執取的「有」或「無」之自性可得。</td></tr><tr><td class="bh15p10-src">若實有相則不應無。何以故？今無先有，則墮斷中；若斷，是則不然。</td><td>如果諸法真有一個實在的「有」相，那就不應該變成「無」。為什麼呢？如果現在無而先前有，那就落入了「斷滅」的過失；而斷滅之說是不能成立的。</td><td class="bh15p10-guan"><b>執實有則斷見隨之而生</b>——若先承許諸法有一個實在自性的「有相」，則其後歸於「無」便成了自相矛盾的「斷滅」；這正顯示凡是安立實有自性的立場，最終都無法自圓其說，必然墮入斷、常兩種極端之一。</td></tr><tr><td class="bh15p10-src">復次，一切諸法，名字和合故，謂之為有；以是故，名字和合所生法不可得。</td><td>再者，一切諸法只是因為名字的和合施設，才被稱作「有」；因此，僅僅由名字和合而說有的法，其實是不可得的。</td><td class="bh15p10-guan"><b>名言施設不等於實有自性</b>——「有」只是名言概念的和合安立，並非背後真有一個獨立自存的實體與之對應；名字可以被安立、被使用，但名字所指向的自性卻遍尋不可得，這正是「假名有、自性空」的核心論式。</td></tr><tr><td class="bh15p10-src">復次，若諸法實有，不應以心識故知有；若以心識故知有，是則非有。如地堅相，以身根、身識知故有，若無身根、身識知，則無堅相。</td><td>再者，如果諸法真是實有的，就不應該需要依靠心識才能知道它「有」；如果是靠心識才知道它「有」，那麼這種「有」其實就不是真正的（獨立自存的）有。譬如地大的堅硬相，是憑藉身根、身識才知道它存在的；如果沒有身根、身識，就無所謂堅硬之相可言。</td><td class="bh15p10-guan"><b>能所相待·所知依能知而立</b>——凡是需要依待「能知」（身根、身識）才能成立的「所知」（堅相），便已證明它不是獨立自存的實有，而是能所相待、因緣和合的產物；若能知不在，所知之相亦隨之消解，可見諸法本無離心識而獨立的自性。</td></tr><tr><td class="bh15p10-src">復次，地若常是堅相，不應捨其相；如凝酥、蠟蜜、樹膠，融則捨其堅相，墮濕相中；金、銀、銅、鐵等亦爾。如水為濕相，寒則轉為堅相。如是等種種，悉皆捨相。</td><td>再者，如果地大永遠都是堅硬之相，就不應該捨棄這個相狀；然而像凝固的酥油、蠟、蜜、樹膠等物，一旦融化就會捨棄堅硬之相，轉而墮入濕潤之相中；金、銀、銅、鐵等金屬也是如此（加熱熔化即失堅相）。又如水本是濕潤之相，遇寒則會轉變為堅硬之相（結冰）。像這樣種種例子，都證明「相」是可以被捨棄、轉變的。</td><td class="bh15p10-guan"><b>相狀可轉·證自性本空</b>——若堅相是諸法固有不變的自性，理應恆常不變；然而現實中堅相、濕相隨因緣（溫度等）條件相互轉換，可見一切相狀皆是因緣和合的暫時顯現，並無恆定不變的自性可以執取，這是以物理現象直接論證「無自性」的具體例證。</td></tr><tr><td class="bh15p10-src">復次，諸論議師輩有能令無、無能令有；諸賢聖人、坐禪人能令地作水、水作地。如是等諸法皆可轉，如十一切入中說。</td><td>再者，善於論辯的學者能夠透過辯論把「有」說成「無」、把「無」說成「有」；而修行有成的賢聖與禪修者，更能以禪定之力令地大轉變為水大、水大轉變為地大。像這樣，一切法都是可以轉變的，這在「十一切入」（十遍處禪觀）中已有詳細說明。</td><td class="bh15p10-guan"><b>言說可轉、定力可轉，皆證法無定性</b>——不論是透過語言辯論的「假名轉換」，還是透過禪定神通的「事相轉換」，都同樣說明諸法沒有一個固定不可轉易的自性；若諸法真有自性，便不可能被言說或禪定所轉變，這是從「可轉性」反推「無自性」的又一論證角度。</td></tr><tr><td class="bh15p10-src">復次，是有見，為貪欲、瞋恚、愚癡、結縛、鬪諍故生；若有生此欲、恚等處，是非佛法。何以故？佛法相善淨故，以是故非實。</td><td>再者，這種「有見」，是因為貪欲、瞋恚、愚癡等煩惱結縛與鬥爭而產生的；凡是會滋生貪欲、瞋恚等煩惱的見解，就不是佛法。為什麼呢？因為佛法的體性是善良清淨的，所以（會滋生煩惱的）「有見」並非真實的佛法正見。</td><td class="bh15p10-guan"><b>以煩惱效應反證見解之虛妄</b>——本品最後從實踐效果回頭檢驗理論：凡是會助長貪瞋癡、引發鬥諍的見解，其虛妄性便由其果報直接顯露；真正的佛法見解必然導向清淨與止息煩惱，這是判斷一切「有見」「無見」是否契合正法的實踐判準，也是全品「破有無二邊」論證的總收束。</td></tr></tbody></table><p class="bh15p10-note">大智度論卷十五第10品「破有無二邊」原文·白話·中觀三欄對照。全品以四個回合層層破斥「有見」「無見」二邊：從生滅表相立見的虛妄、實有相不應歸無的斷見過失，到名字和合假有、能所相待、相狀可轉、言說禪定皆可轉易，終以「有見助長煩惱鬥諍、非佛法相」收束全品論證。　中觀關鍵詞：有無二邊　名言假有　能所相待　相可轉故無自性</p></div></div>
+<script id="wy-bh15p10-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p10Btn"),BOX=document.getElementById("bh15p10Box"),MODAL=document.getElementById("bh15p10Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=9;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p10Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p10Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P10:END-->
 </body>
 </html>
