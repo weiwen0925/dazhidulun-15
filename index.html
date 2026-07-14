@@ -2417,5 +2417,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P8:END-->
+<!--WY-BH15P9:BEGIN-->
+<style id="wy-bh15p9-css">
+.bh15p9-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p9-fabbox.show{display:block;}
+.bh15p9-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p9-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p9-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p9-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p9-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p9-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p9-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p9-modal.open{display:flex;}
+.bh15p9-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p9-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p9-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p9-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p9-close:hover{background:#dde2e6;}
+.bh15p9-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p9-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p9-tbl th,.bh15p9-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p9-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p9-tbl thead th:nth-child(1){width:32%;}.bh15p9-tbl thead th:nth-child(2){width:41%;}.bh15p9-tbl thead th:nth-child(3){width:27%;}
+.bh15p9-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p9-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p9-guan{background:#eef2f5;color:#37505f;}
+.bh15p9-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p9-tbl tbody tr:nth-child(even) td.bh15p9-guan{background:#e8eef2;}
+.bh15p9-tbl tbody tr:nth-child(even) td.bh15p9-qa{background:#e7ecdb;}
+.bh15p9-tbl b{color:#8b2500;}
+.bh15p9-guan b{color:#2f6b5a;}
+.bh15p9-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p9-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p9-fabbox{right:14px;}.bh15p9-tbl{font-size:11px;}.bh15p9-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p9-fabbox" id="bh15p9Box"><button class="bh15p9-btn" id="bh15p9Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p9-ic">譯</span><span class="bh15p9-ls"><span class="bh15p9-l1">本品 · 原文·白話·中觀</span><span class="bh15p9-l2">白話翻譯表</span></span></button></div><div class="bh15p9-modal" id="bh15p9Modal" role="dialog" aria-modal="true"><div class="bh15p9-card"><button class="bh15p9-close" id="bh15p9Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第9品 白話翻譯表（常無常之辯·金剛法忍）</h3><p class="sub">大智度論卷十五·常無常之辯·金剛法忍 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p9-tbl"><caption>常無常之辯·金剛法忍 · 原文｜白話翻譯｜中觀概念（共7段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p9-src">復次，諸法不應是常。何以故？若常則無罪、無福，無所傷殺，亦無施命，亦無修行利益，亦無縛、無解，世間則是涅槃。如是等因緣故，諸法不應常。</td><td>再者，諸法不應該是恆常的。為什麼呢？如果諸法是恆常的，就不會有罪業、也不會有福報，沒有傷害殺生這回事，也沒有施予生命這回事，更沒有修行帶來的利益，也沒有繫縛、沒有解脫，如此一來世間就等同於涅槃了。基於以上這些道理，諸法不應該是恆常的。</td><td class="bh15p9-guan"><b>執常則因果體系崩塌</b>——若諸法絕對恆常不變，善惡業報、修行解脫等一切佛法根基便全數瓦解，甚至荒謬地導致「世間即涅槃」——因為恆常不變的世間本就無苦可言、無需解脫。這是對「常見」最直接的邏輯歸謬。</td></tr><tr><td class="bh15p9-src">若諸法無常，則是斷滅，亦無罪、無福，亦無增損功德業，因緣果報亦失。如是等因緣故，諸法不應無常。</td><td>如果諸法是徹底無常、生滅斷絕的，那就是「斷滅」，同樣也不會有罪業、不會有福報，功德業也無從增減，因緣果報也就喪失了。基於以上這些道理，諸法也不應該是斷滅式的無常。</td><td class="bh15p9-guan"><b>執斷滅則業果亦失</b>——與執常相對，若把「無常」理解為前後徹底斷絕、毫無相續的「斷滅」，因果業報同樣無法安立。此句與上一句合觀，正是中觀「離常離斷」雙遮法的完整呈現——真正的無常是「相續而非恆常」，而非「斷絕而毫無關聯」。</td></tr><tr><td class="bh15p9-qa">問曰：汝言「佛法中常亦不實，無常亦不實」，是事不然！何以故？佛法中常亦實，無常亦實。常者，數緣盡、非數緣盡、虛空，不生、不住、不滅故，是常相；無常者，五眾生、住、滅故，無常相。汝何以言：「常、無常皆不實」？</td><td>有人問道：你說「佛法中常也不真實、無常也不真實」，這說法不對！為什麼呢？佛法中「常」也是真實的，「無常」也是真實的。所謂「常」，是指擇滅、非擇滅、虛空這三種無為法，因為它們不生、不住、不滅，所以稱為常相；所謂「無常」，是指五蘊等有為法，因為它們有生、有住、有滅，所以稱為無常相。你憑什麼說「常與無常都不真實」呢？</td><td class="bh15p9-guan"><b>以教理分類混淆究竟實相</b>——提問者引用阿毗達磨式的標準定義，將「教理上的名相分類」誤當作「本體論上的究竟實有」，這正是中觀要破斥的根本謬誤：名相與定義只是施設的工具，並不等於背後有一個獨立自性的實體。</td></tr><tr><td class="bh15p9-qa">答曰：聖人有二種語：一者、方便語，二者、直語。方便語者，為人、為因緣故。為人者，為眾生說是常、是無常，如對治悉檀中說。若說無常，欲拔眾生三界著樂；佛思惟：「以何令眾生得離欲？」是故說無常法。如偈說：「若觀無生法，於生法得離；若觀無為法，於有為得離。」云何生？生名因緣和合，無常，不自在，屬因緣，有老病死相、欺誑相、破壞相，是名生；生則是有為法。如對治悉檀說。常、無常，非實相，二俱過故。若諸法非有常非無常，是為愚癡論。所以者何？若非有則破無，若非無則破有；若破此二事，更有何法可說？</td><td>回答說：聖人說法有兩種方式：一種是「方便語」，一種是「直語」。方便語，是為了對治眾生的病症、順應因緣而說的。所謂「為人」，是指針對眾生根機而說「是常」或「是無常」，這如同「對治悉檀」中所說的一樣。之所以說「無常」，是為了拔除眾生對三界欲樂的貪著；佛陀思惟：「要用什麼方法才能讓眾生遠離貪欲？」所以才宣說無常之法。正如偈頌所說：「如果能觀照『無生』之法，就能從『生』的束縛中得到解脫；如果能觀照『無為』之法，就能從『有為』的束縛中得到解脫。」什麼是「生」呢？「生」是指因緣和合而成、無常不自在、隨因緣而轉，具有老、病、死的相狀，具有欺誑不實的相狀，具有敗壞消亡的相狀，這就稱為「生」；而「生」本身就是有為法。這也是依「對治悉檀」而說的。「常」與「無常」都不是究竟實相，因為這兩種說法都各有過失。如果說諸法「既非常、也非無常」，那也是一種愚癡的言論。為什麼呢？因為如果否定「非有」，就等於肯定了「無」；如果否定「非無」，就等於肯定了「有」；如果把「有」和「無」這兩者都推翻了，那還有什麼法可說呢？</td><td class="bh15p9-guan"><b>方便語與直語·藥病關係的詮釋學</b>——這是中觀詮釋學的核心鑰匙：說「無常」並非在陳述宇宙的終極本體論真相，而是一帖對治眾生貪著三界的「藥」；一旦誤把藥方當作病癒後的健康狀態本身，便會在「非有非無」上重蹈覆轍——因為「非有非無」若被當作一個可主張、可辯護的新命題，它同樣會落入「可說可破」的戲論結構中，這正是「愚癡論」的判準所在。</td></tr><tr><td class="bh15p9-qa">問曰：佛法常空相中，非有、非無；空以除有，空空遮無，是為非有、非無，何以言愚癡論？</td><td>有人又問：佛法常說一切法皆是空相，既非「有」、也非「無」；用「空」來破除「有」，再用「空空」來遮止「無」，這樣得出的「非有非無」，為什麼還說它是愚癡的言論呢？</td><td class="bh15p9-guan"><b>以藥為病的隱微陷阱</b>——這是已經通過「常／斷」二見辯證者才會提出的更精細質疑，他們試圖將「非有非無」本身樹立為一個最終的正確立場。這正是中觀修證途中最危險的陷阱：把用來破執的工具本身又執取為一個新的、更高明的實有立場。</td></tr><tr><td class="bh15p9-qa">答曰：佛法實相，不受、不著。汝非有、非無受著故，是為癡論。若言非有、非無，是則可說、可破，是心生處，是鬪諍處。佛法則不然，雖因緣故說非有、非無，不生著；不生著則不可壞、不可破。諸法若有邊，若無邊，若有無邊，若非有無邊；若死後有去，若死後無去，若死後有去無去，若死後非有去非無去；是身是神，身異神異，亦如是，皆不實。於六十二見中觀諸法，亦皆不實。</td><td>回答說：佛法所說的實相，是不接受、不執取任何立場的。你之所以會對「非有非無」產生執取，正是因為這樣才稱作愚癡的言論。如果說「非有非無」，那麼這個說法本身仍然是可以被主張、也可以被破斥的，仍然是心念生起、爭辯不休的根源。佛法卻不是這樣——雖然因隨順因緣而說「非有非無」，卻不對這個說法產生執取；不執取，這說法就不可能被破壞、不可能被破斥。同樣的道理，無論說諸法「有邊」、「無邊」、「亦有邊亦無邊」、或「非有邊非無邊」；無論說「死後仍有去處」、「死後沒有去處」、「死後亦有去亦無去」、或「死後非有去非無去」；無論說「身即是神我」或「身與神我各異」，這些說法也都是一樣的道理，全部都不真實。以般若觀照六十二種邪見中的一切法，也全都是不真實的。</td><td class="bh15p9-guan"><b>不受不著才是實相·超越一切命題的立場</b>——這是全品辯證的最高峰：實相之所以不可壞、不可破，關鍵不在於找到一個「正確的命題」，而在於「不生著」的心態本身——任何被執取、被主張為究竟真理的命題，無論多麼精微，都會立刻淪為戲論；唯有對一切命題皆不生執著，才能真正超越「心生處、鬪諍處」的戲論循環。</td></tr><tr><td class="bh15p9-src">如是一切除却，信佛法清淨不壞相，心不悔、不轉，是名法忍。</td><td>像這樣把一切都徹底除卻之後，深信佛法清淨不壞的實相，心中不生悔意、不再退轉，這就稱為「法忍」。</td><td class="bh15p9-guan"><b>法忍的終極定義·除却一切執取後的不轉信心</b>——本品以此句作為全部辯證的終點與總結：法忍不是「找到答案」，而是「除却一切可能被執取的答案」之後，仍然對佛法清淨不壞的實相保持不悔、不轉的堅定信心——這正是貫穿整部第九品「破常、破斷、破非有非無」的最終落腳點。</td></tr></tbody></table><p class="bh15p9-note">大智度論卷十五第9品「常無常之辯·金剛法忍」原文·白話·中觀三欄對照。全段以雙遮法破斥「常」「無常」二見起始，經對方兩輪質疑，論主分別以「聖人二種語」與「佛法實相不受不著」層層拆解，終歸「除却一切、信佛法清淨不壞相、心不悔不轉」即是法忍的究竟定義。　中觀關鍵詞：雙遮常斷　聖人二種語　以藥為病　不受不著　法忍終極定義</p></div></div>
+<script id="wy-bh15p9-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p9Btn"),BOX=document.getElementById("bh15p9Box"),MODAL=document.getElementById("bh15p9Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=8;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p9Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p9Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P9:END-->
 </body>
 </html>
