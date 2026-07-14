@@ -2621,5 +2621,56 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-BH15P12:END-->
+<!--WY-BH15P13:BEGIN-->
+<style id="wy-bh15p13-css">
+.bh15p13-fabbox{position:fixed;right:22px;bottom:150px;z-index:123;display:none;}
+.bh15p13-fabbox.show{display:block;}
+.bh15p13-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#4a5a68,#232d36);padding:8px 15px;border-radius:22px;border:1px solid rgba(150,180,205,.55);box-shadow:0 4px 16px rgba(0,0,0,.32);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.bh15p13-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(120,160,200,.5);}
+.bh15p13-ic{font-size:15px;line-height:1;color:#bcd4ea;}
+.bh15p13-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.bh15p13-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.bh15p13-l2{font-size:13px;font-weight:700;color:#eef4fa;white-space:nowrap;}
+.bh15p13-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(22,26,30,.6);padding:16px;}
+.bh15p13-modal.open{display:flex;}
+.bh15p13-card{position:relative;background:#fbf7ee;max-width:1080px;width:100%;max-height:90vh;overflow:auto;border:1px solid #d3cdbf;border-radius:14px;padding:28px 22px 20px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.bh15p13-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#3f5160;}
+.bh15p13-card .sub{margin:0 0 12px;font-family:"Noto Sans TC",sans-serif;font-size:12.5px;color:#5b6b78;}
+.bh15p13-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#eceef0;color:#3f5160;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.bh15p13-close:hover{background:#dde2e6;}
+.bh15p13-tbl{width:100%;border-collapse:collapse;font-size:12.8px;margin:.2em 0 1em;}
+.bh15p13-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#3f5160;font-size:14px;text-align:left;margin:.4em 0 .5em;}
+.bh15p13-tbl th,.bh15p13-tbl td{border:1px solid #d8d2c4;padding:.5em .65em;text-align:left;vertical-align:top;line-height:1.72;}
+.bh15p13-tbl thead th{background:#3f5160;color:#eef4fa;font-weight:700;position:sticky;top:0;}
+.bh15p13-tbl thead th:nth-child(1){width:32%;}.bh15p13-tbl thead th:nth-child(2){width:41%;}.bh15p13-tbl thead th:nth-child(3){width:27%;}
+.bh15p13-src{font-family:"Noto Serif TC",serif;color:#5a4636;background:#f6efe0;letter-spacing:.3px;}
+.bh15p13-qa{font-family:"Noto Serif TC",serif;color:#3d4f2f;background:#eef2e2;letter-spacing:.3px;}
+.bh15p13-guan{background:#eef2f5;color:#37505f;}
+.bh15p13-tbl tbody tr:nth-child(even) td{background:#faf6ee;}
+.bh15p13-tbl tbody tr:nth-child(even) td.bh15p13-guan{background:#e8eef2;}
+.bh15p13-tbl tbody tr:nth-child(even) td.bh15p13-qa{background:#e7ecdb;}
+.bh15p13-tbl b{color:#8b2500;}
+.bh15p13-guan b{color:#2f6b5a;}
+.bh15p13-note{font-size:12px;color:#4a5560;line-height:1.95;background:#eef2f5;border-left:3px solid #7f9cb5;border-radius:0 6px 6px 0;padding:11px 14px;margin:2px 0 0;}
+.bh15p13-note b{color:#8b2500;}
+@media(max-width:900px){.bh15p13-fabbox{right:14px;}.bh15p13-tbl{font-size:11px;}.bh15p13-card{padding:22px 12px 14px;}}
+</style>
+<div class="bh15p13-fabbox" id="bh15p13Box"><button class="bh15p13-btn" id="bh15p13Btn" type="button" aria-label="開啟白話翻譯表"><span class="bh15p13-ic">譯</span><span class="bh15p13-ls"><span class="bh15p13-l1">本品 · 原文·白話·中觀</span><span class="bh15p13-l2">白話翻譯表</span></span></button></div><div class="bh15p13-modal" id="bh15p13Modal" role="dialog" aria-modal="true"><div class="bh15p13-card"><button class="bh15p13-close" id="bh15p13Close" type="button" aria-label="關閉">×</button><h3>卷十五 · 第13品 白話翻譯表（般若實相與法忍清淨義）</h3><p class="sub">大智度論卷十五·般若實相與法忍清淨義 · 原文↔白話↔中觀概念 逐段對照</p><table class="bh15p13-tbl"><caption>般若實相與法忍清淨義 · 原文｜白話翻譯｜中觀概念（共10段）</caption><thead><tr><th>原文</th><th>白話翻譯</th><th>中觀概念</th></tr></thead><tbody><tr><td class="bh15p13-src">復次，禪定力故，心柔軟清淨，聞諸法實相，應心與會，信著深入，無疑、無悔。所以者何？疑、悔是欲界繫法，麁惡故不入柔軟心中，是名法忍。</td><td>再者，由於禪定力的緣故，心變得柔軟清淨；當聽聞到諸法的實相時，心便能與之相應契合，深信不疑、深入信解，沒有疑惑也沒有懊悔。為什麼呢？因為疑惑與懊悔是欲界所繫縛的粗重煩惱法，粗惡而無法進入柔軟清淨的心中，這就稱為「法忍」。</td><td class="bh15p13-guan"><b>禪定為法忍第一基底</b>——本段揭示法忍並非空談義理即可成就，而必須先有禪定力所柔軟的心作為載體；心若粗重躁動，實相之理縱然聽聞，也無法真正契入信受，這說明定與慧在修證次第上密不可分。</td></tr><tr><td class="bh15p13-src">復次，智慧力故，於一切諸法中種種觀，無有一法可得者；是法能忍、能受，不疑、不悔，是名法忍。</td><td>再者，由於智慧力的緣故，在一切諸法之中作種種觀察，找不到有任何一法是真實可得的；能夠安忍、領受這樣的觀照而不生疑惑、不生懊悔，這就稱為「法忍」。</td><td class="bh15p13-guan"><b>智慧觀照·諸法無所得</b>——延續禪定基底，本段進一步由智慧力觀照一切法「無有一法可得」，這正是中觀「無自性」觀的具體操作：以般若遍觀諸法，見其了不可得，而能安然忍受、領納此空義而不驚不怖。</td></tr><tr><td class="bh15p13-src">復次，菩薩思惟：「凡夫人以無明毒故，於一切諸法中作轉相：非常作常想，苦作樂想，無我有我想，空謂有實，非有為有，有為非有。如是等種種法中作轉相，得聖實智慧，破無明毒，知諸法實相。」得無常、苦、空、無我智慧，棄捨不著，是法能忍，是名法忍。</td><td>再者，菩薩如此思惟：「凡夫由於無明之毒的緣故，在一切諸法之中產生種種顛倒錯亂的認知：把無常當作是常、把苦當作是樂、把無我當作是有我、把空當作是實有、把不存在的當作存在、把存在的當作不存在。在種種法中都產生這樣顛倒的認知；如今證得聖者的真實智慧，便能破除無明之毒，了知諸法的實相。」由此獲得無常、苦、空、無我的智慧，能夠棄捨而不執著，能夠安忍這樣的智慧，這就稱為「法忍」。</td><td class="bh15p13-guan"><b>破四顛倒·無明毒之診斷與對治</b>——本段精細列舉凡夫「常樂我淨」四種顛倒認知，並指出這是「無明毒」所致；菩薩以聖智破除此毒，證得無常、苦、空、無我，而後更進一步「棄捨不著」——連對治的智慧本身也不執取，這正呼應中觀「以空破有、以空亦不著空」的雙重超越精神。</td></tr><tr><td class="bh15p13-src">復次，觀一切諸法，從本已來常空，今世亦空，是法能信、能受，是為法忍。</td><td>再者，觀照一切諸法，從本以來就是常常空寂的，現今世間也是空的，能夠信受這樣的觀照，這就是「法忍」。</td><td class="bh15p13-guan"><b>諸法本空·信受即法忍</b>——此句直接點出法忍最核心的內容：諸法「從本已來常空，今世亦空」，這是對緣起性空最直截了當的宣說，能否信受此理而不動搖，正是檢驗法忍成就與否的關鍵指標。</td></tr><tr><td class="bh15p13-qa">問曰：若從本已來常空，今世亦空，是為惡邪，云何言法忍？</td><td>問：如果說諸法從本以來就是常常空的，現今世間也是空的，這豈不就是「惡邪見」（斷滅空見）嗎？為什麼還說這是「法忍」呢？</td><td class="bh15p13-guan"><b>詰難登場·空與惡邪見如何區分</b>——這是全品的關鍵詰難：既然中觀屢屢強調不可執斷滅之無，為何此處又說「常空」是法忍而非惡邪見？這一問直指「空」的雙重危險性——說得不精確，「空」隨時可能滑向斷滅論。</td></tr><tr><td class="bh15p13-qa">答曰：若觀諸法常畢竟空，取相心著，是為惡邪見；若觀空不著，不生邪見，是為法忍。</td><td>答：如果觀照諸法是常常畢竟空的，卻又對這個「空」取相執著，那就是惡邪見；如果觀照空而心不執著，不生起邪見，這才是法忍。</td><td class="bh15p13-guan"><b>關鍵判準：著與不著</b>——這是全論辯的樞紐句：同樣是觀「空」，差別只在一念之間——「取相心著」則墮惡邪見，「觀空不著」則成法忍。空性本身從不是問題，問題永遠出在能觀之心是否又對空生起新的執取，這正是中觀「空亦復空」思想的具體開展。</td></tr><tr><td class="bh15p13-src">諸法性常空，心亦不著空；如是法能忍，是佛道初相。</td><td>諸法的體性是常常空寂的，而這顆能觀之心，也不執著於「空」這個概念本身；能夠這樣安忍於法，就是趣向佛道的最初徵相。</td><td class="bh15p13-guan"><b>佛道初相偈·空亦復空的頂點</b>——此偈是全品思想的凝鍊總結：上句「諸法性常空」立「空」之真理，下句「心亦不著空」破對空的執著，兩句合觀即是龍樹「空亦復空」的完整表述，被論主標舉為「佛道初相」，可見其地位之核心。</td></tr><tr><td class="bh15p13-src">如是等種種入智慧門，觀諸法實相，心不退、不悔，不隨諸觀，亦無所憂，能得自利、利他，是名法忍。</td><td>像這樣種種契入智慧法門，觀照諸法實相，心不退轉、不生懊悔，不隨著種種紛雜的觀想而動搖，也沒有憂慮，能夠成就自利、利他兩種功德，這就稱為「法忍」。</td><td class="bh15p13-guan"><b>不退不悔·自利利他雙成</b>——本段總結前述種種契入智慧之門的成果：法忍不僅是理論上的通達，更展現為心行上「不退、不悔、不隨諸觀、無所憂」的穩定狀態，並進一步開展出自利利他的實際功德，說明法忍是解脫與菩薩行的共同基礎。</td></tr><tr><td class="bh15p13-src">是法忍有三種行清淨：不見忍辱法，不見己身，不見罵辱人；不戲諸法，是時名清淨法忍。以是事故，說菩薩住般若波羅蜜中，能具足羼提波羅蜜，不動、不退故。</td><td>這個法忍有三種行持上的清淨：見不到有一個「忍辱」的法可得，見不到有一個「自己」的存在，也見不到有一個「辱罵者」的存在；不對諸法產生戲論，這時候才稱為「清淨法忍」。因為這個緣故，才說菩薩安住在般若波羅蜜之中，能夠具足羼提波羅蜜，因為心不動搖、不退轉的緣故。</td><td class="bh15p13-guan"><b>三輪體空·清淨法忍的具體結構</b>——這是法忍在實踐層面的精確定義：忍辱之所以能「清淨」，關鍵在於「三輪體空」——沒有能忍的法、沒有能忍的自己、也沒有所忍的對象，三者皆不可得而不生戲論；這正是般若「三輪體空」思想在忍辱波羅蜜上的具體落實。</td></tr><tr><td class="bh15p13-src">云何名「不動不退」？瞋恚不生，不出惡言，身不加惡，心無所疑。菩薩知般若波羅蜜實相，不見諸法，心無所著故；若人來罵，若加楚毒、殺害，一切能忍。以是故說「住般若波羅蜜中，能具足羼提波羅蜜」。</td><td>什麼叫做「不動不退」呢？就是瞋恨心不生起，口中不說出惡言，身體不做出傷害的行為，心中也沒有疑惑。菩薩了知般若波羅蜜的實相，見不到有任何一法可得，心中無所執著的緣故；即使有人前來辱罵，或者加以極端的痛苦逼迫、乃至殺害，都能一切安忍。因為這個緣故，才說「安住在般若波羅蜜之中，能夠具足羼提波羅蜜」。</td><td class="bh15p13-guan"><b>不動不退的終極測試·極端楚毒下的安忍</b>——本段以最嚴苛的處境作為「法忍」的試金石，說明這種安忍並非壓抑或忍耐力的展現，而是因為透徹了知般若實相「不見諸法、心無所著」，故一切侵犯自然失去著力點——這正是全品「般若引導、羼提成就」核心命題的最終落實。</td></tr></tbody></table><p class="bh15p13-note">大智度論卷十五第13品「般若實相與法忍清淨義」原文·白話·中觀三欄對照。全品由禪定力、智慧力、破無明毒、觀諸法本空四重基底層層推進法忍之成立，經對手詰難「常空豈非惡邪見」，以「取相心著為惡邪見·觀空不著為法忍」判準破之，並以「諸法性常空，心亦不著空」佛道初相偈收攝空亦復空之義，終以三輪體空、極端楚毒下不動不退作全品實踐總結。　中觀關鍵詞：法忍三重基底　空亦復空　三輪體空　不動不退</p></div></div>
+<script id="wy-bh15p13-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("bh15p13Btn"),BOX=document.getElementById("bh15p13Box"),MODAL=document.getElementById("bh15p13Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=12;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+/*BHPLACE*/function place(){var cands=[document.getElementById("c15p13Box")],eb=document.querySelector(".wy-ebox");if(eb)cands.push(eb);var best=null;for(var i=0;i<cands.length;i++){var el=cands[i];if(!el)continue;var cs=getComputedStyle(el);if(cs.display==="none")continue;var r=el.getBoundingClientRect();if(r.height<=4)continue;var v=Math.round(window.innerHeight-r.top)+8;if(best===null||v>best)best=v;}if(best!==null)BOX.style.bottom=best+"px";}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="bh15p13Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-BH15P13:END-->
 </body>
 </html>
